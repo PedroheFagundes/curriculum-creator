@@ -31,7 +31,7 @@
       </fieldset>
     </div>
 
-    <div id="expertise-area" class="sectionOn">
+    <div id="expertise-area" class="sectionOff">
       <fieldset>
         <legend>Expertise Area</legend>
 
@@ -132,9 +132,11 @@
   </div>
 
   <div class="column">
-      <button onclick="showPersonalInfo()" disabled>Personal Info</button>
-      <button onclick="showPersonalInfo()">Personal Info</button>
+    <div id="sections-buttons">
+      <button id="personal-info-button" onclick="showPersonalInfo()" disabled>Personal Info</button>
+      <button id="expertise-area-button" onclick="showExpertiseArea()">Expertise Area</button>
       <button onclick="">Next</button>
+    </div>
   </div>
 
   <footer>
