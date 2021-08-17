@@ -6,6 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" href="/img/favicon.png"/>
   <link rel="stylesheet" href="main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
   <title>Curriculum Creator</title>
 </head>
@@ -15,13 +18,14 @@
     <p>Create a curriculum easily, choose a theme and download it!</p>
     <p>Your next job is awaiting you with a well-done curriculum!</p>
   </header>
+
   <div id="sections">
     <div id="personal-info" class="sectionOn">
       <fieldset>
         <legend>Personal Info</legend>
 
         <label>
-            Insert your full name::
+            Insert your full name:
             <input id="name" type="text" required placeholder="José Silva" />
         </label>
       </fieldset>
@@ -81,6 +85,55 @@
         </label>
       </fieldset>
     </div>
+
+    <div id="conferences-courses" class="sectionOn">
+      <fieldset>
+        <legend>Conferences & Courses</legend>
+
+        <label>
+            Insert a professional experience:
+            <input id="" type="text" required placeholder="José Silva" />
+        </label>
+      </fieldset>
+    </div>
+
+    <div id="education" class="sectionOn">
+      <fieldset>
+        <legend>Education</legend>
+
+        <label>
+            Insert a professional experience:
+            <input id="" type="text" required placeholder="José Silva" />
+        </label>
+      </fieldset>
+    </div>
+
+    <div id="languages" class="sectionOn">
+      <fieldset>
+        <legend>Languages</legend>
+
+        <label>
+            Insert a professional experience:
+            <input id="" type="text" required placeholder="José Silva" />
+        </label>
+      </fieldset>
+    </div>
+
+    <div id="interests" class="sectionOn">
+      <fieldset>
+        <legend>Interests</legend>
+
+        <label>
+            Insert a professional experience:
+            <input id="" type="text" required placeholder="José Silva" />
+        </label>
+      </fieldset>
+    </div>
+  </div>
+
+  <div class="column">
+      <button onclick="showPersonalInfo()">Personal Info</button>
+      <button onclick="">Next</button>
   </div>
 
   <footer>
@@ -91,6 +144,6 @@
     </div>
   </footer>
   
-  <script src="index.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
