@@ -20,14 +20,13 @@ body {
 
 button {
   background-color: var(--light);
-  border-radius: 50px/50px;
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
+  border-radius: 5px;
   border: none;
   box-shadow: 4px 4px 10px rgb(0 0 0 / 0.5);
-  padding: 7px 12px 7px 7px;
+  padding: 7px;
   margin: 20px 5vw;
   font-size: 16px;
+  transition: all 0.1s linear;
 }
 
 button:hover {
@@ -51,6 +50,10 @@ header {
   background-color: var(--primary);
   text-align: center;
   color: var(--light);
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 input {
