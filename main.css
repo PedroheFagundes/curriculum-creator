@@ -135,3 +135,12 @@ footer {
 }
 
 /* Responsiviness */
+
+@media screen and (max-width: 700px) {
+
+
+
+  label {
+    width: 90%;
+  }
+}
