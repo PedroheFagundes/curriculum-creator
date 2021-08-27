@@ -19,6 +19,13 @@
     <p>Your next job is awaiting you with a well-done curriculum!</p>
   </header>
 
+  <div class="column">
+    <div id="sections-buttons">
+      <button id="previousButton" onclick="previousSection()" disabled>Previous</button>
+      <button id="nextButton" onclick="nextSection()">Next: Expertise Area</button>
+    </div>
+  </div>
+
   <div id="sections">
     <div id="personal-info" class="sectionOn">
       <fieldset>
@@ -64,8 +71,8 @@
         <legend>Expertise Area</legend>
 
         <label>
-            Expertise Areas (separated by comma):
-            <input id="" type="text" required placeholder="Leadership, Risk Management, Front-end Development" />
+          Expertise Areas (separated by comma):
+          <input id="" type="text" required placeholder="Leadership, Risk Management, Front-end Development" />
         </label>
       </fieldset>
     </div>
@@ -75,9 +82,36 @@
         <legend>Professional Experience</legend>
 
         <label>
-            Insert a professional experience:
-            <input id="" type="text" required placeholder="José Silva" />
+          Position Role:
+          <input id="" type="text" required placeholder="Jr Front-end Developer" />
         </label>
+        <label>
+          Company Name:
+          <input id="" type="text" required placeholder="Oceanic Airlines" />
+        </label>
+        <label>
+          Company Location:
+          <input id="" type="text" required placeholder="Sidney, Australia" />
+        </label>
+        <label id="activity-period">
+          Activity Period:
+          <div class="start-finish">
+            <div>
+              Start:
+              <input id="start" type="date" required />
+            </div>
+            <div>
+              Finish:
+              <input id="finish" type="date" required />
+            </div>
+          </div>
+        </label>
+        <label>
+          Achievements: <br>
+          Just one achievement for now, it'll be able to add more soon.
+          <input id="" type="text" required placeholder="Colaborated with the global developing team to deploy the main company product." />
+        </label>
+
       </fieldset>
     </div>
 
@@ -86,8 +120,28 @@
         <legend>Certificates</legend>
 
         <label>
-            Insert a professional experience:
-            <input id="" type="text" required placeholder="José Silva" />
+            Certificate Title:
+            <input id="" type="text" required placeholder="Introduction to Test Driven Development" />
+        </label>
+        <label>
+          Date of Conclusion:
+          <input id="" type="month" required />
+        </label>
+        <label>
+          Certificate Title:
+          <input id="" type="text" required placeholder="Introduction to Test Driven Development" />
+        </label>
+        <label>
+          Date of Conclusion:
+          <input id="" type="month" required />
+        </label>
+        <label>
+          Certificate Title:
+          <input id="" type="text" required placeholder="Introduction to Test Driven Development" />
+        </label>
+        <label>
+          Date of Conclusion:
+          <input id="" type="month" required />
         </label>
       </fieldset>
     </div>
@@ -97,8 +151,16 @@
         <legend>Awards</legend>
 
         <label>
-            Insert a professional experience:
-            <input id="" type="text" required placeholder="José Silva" />
+          Award Title:
+          <input id="" type="text" required placeholder="Annual Excellence Award" />
+        </label>
+        <label>
+          Award Date:
+          <input id="" type="month" required />
+        </label>
+        <label>
+          Company Name:
+          <input id="" type="text" required placeholder="Dharma Corporation" />
         </label>
       </fieldset>
     </div>
@@ -108,9 +170,49 @@
         <legend>Professional Organizations</legend>
 
         <label>
-            Insert a professional experience:
-            <input id="" type="text" required placeholder="José Silva" />
+            Organization name:
+            <input id="" type="text" required placeholder="Dharma Corporation" />
         </label>
+
+        <label id="activity-period">
+          Activity Period:
+          <div class="start-finish">
+            <div>
+              Start:
+              <input id="start" type="date" required />
+            </div>
+            <div>
+              Finish:
+              <input id="finish" type="date" required />
+            </div>
+            <div>
+              <input type="checkbox" name="" id="">
+              Presente
+            </div>
+          </div>
+        </label>
+        <label>
+          Organization name:
+          <input id="" type="text" required placeholder="Dharma Corporation" />
+      </label>
+
+      <label id="activity-period">
+        Activity Period:
+        <div class="start-finish">
+          <div>
+            Start:
+            <input id="start" type="date" required />
+          </div>
+          <div>
+            Finish:
+            <input id="finish" type="date" required />
+          </div>
+          <div>
+            <input type="checkbox" name="" id="">
+            Present
+          </div>
+        </div>
+      </label>
       </fieldset>
     </div>
 
@@ -119,8 +221,16 @@
         <legend>Conferences & Courses</legend>
 
         <label>
-            Insert a professional experience:
-            <input id="" type="text" required placeholder="José Silva" />
+          Course Title:
+          <input id="" type="text" required placeholder="Annual Excellence Award" />
+        </label>
+        <label>
+          Course Date:
+          <input id="" type="month" required />
+        </label>
+        <label>
+          Institution Name:
+          <input id="" type="text" required placeholder="Dharma Corporation" />
         </label>
       </fieldset>
     </div>
@@ -130,9 +240,30 @@
         <legend>Education</legend>
 
         <label>
-            Insert a professional experience:
-            <input id="" type="text" required placeholder="José Silva" />
+            Title:
+            <input id="" type="text" required placeholder="Masters Degree in Artificial Intelligence" />
         </label>
+        <label>
+          Institution:
+          <input id="" type="text" required placeholder="Miskatonic University" />
+      </label>
+      <label id="activity-period">
+        Period:
+        <div class="start-finish">
+          <div>
+            Start:
+            <input id="start" type="date" required />
+          </div>
+          <div>
+            Finish:
+            <input id="finish" type="date" required />
+          </div>
+          <div>
+            <input type="checkbox" name="" id="">
+            In Course
+          </div>
+        </div>
+      </label>
       </fieldset>
     </div>
 
@@ -141,9 +272,34 @@
         <legend>Languages</legend>
 
         <label>
-            Insert a professional experience:
-            <input id="" type="text" required placeholder="José Silva" />
+            Language:
+            <input id="" type="text" required placeholder="Esperanto" />
         </label>
+        <label>
+          Proficiency:
+          <select name="proficiency">
+            <option value="">Elementary Proficiency</option>
+            <option value="">Limited Working Proficiency</option>
+            <option value="">Professional Working Proficiency</option>
+            <option value="">Full Professional Proficiency</option>
+            <option value="">Native / Bilingual Proficiency</option>
+          </select>
+        </label>
+
+        <label>
+          Language:
+          <input id="" type="text" required placeholder="Esperanto" />
+      </label>
+      <label>
+        Proficiency:
+        <select name="proficiency">
+          <option value="">Elementary Proficiency</option>
+          <option value="">Limited Working Proficiency</option>
+          <option value="">Professional Working Proficiency</option>
+          <option value="">Full Professional Proficiency</option>
+          <option value="">Native / Bilingual Proficiency</option>
+        </select>
+      </label>
       </fieldset>
     </div>
 
@@ -152,19 +308,14 @@
         <legend>Interests</legend>
 
         <label>
-            Insert a professional experience:
-            <input id="" type="text" required placeholder="José Silva" />
+          Interests (separated by comma):
+          <input id="" type="text" required placeholder="Archery, Games, Music" />
         </label>
       </fieldset>
     </div>
   </div>
 
-  <div class="column">
-    <div id="sections-buttons">
-      <button id="previousButton" onclick="previousSection()" disabled>Previous</button>
-      <button id="nextButton" onclick="nextSection()">Next: Expertise Area</button>
-    </div>
-  </div>
+
 
   <footer>
     <div id="footer" class="footer">
