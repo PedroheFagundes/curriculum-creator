@@ -24,6 +24,8 @@
       <button id="previousButton" onclick="previousSection()" disabled>Previous</button>
       <button id="nextButton" onclick="nextSection()">Next: Expertise Area</button>
     </div>
+    <button id="formated-curriculum-button" class="sectionOff" onclick="showCurriculum()">Confirm Curriculum Infos</button>
+
   </div>
 
   <div id="sections">
@@ -315,6 +317,11 @@
     </div>
   </div>
 
+  <div id="formated-curriculum" class="sectionOff">
+    <div class="canvas_div_pdf">
+      <h1>Teste</h1>
+    </div>
+  </div>
 
 
   <footer>
@@ -325,6 +332,9 @@
     </div>
   </footer>
   
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.3/jspdf.min.js"></script>
+  <script src="https://html2canvas.hertzen.com/dist/html2canvas.js"></script>
   <script src="script.js"></script>
 </body>
 </html>

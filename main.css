@@ -120,6 +120,11 @@ footer {
   justify-content: center;
 }
 
+#sections-buttons {
+  display: flex;
+  flex-direction: row;
+}
+
 /* Classes */
 
 .column {
@@ -152,8 +157,4 @@ footer {
     width: 90%;
   }
 
-  #sections-buttons {
-    display: flex;
-    flex-direction: row;
-  }
 }
