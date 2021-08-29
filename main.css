@@ -48,9 +48,9 @@ h1 {
 
 header {
   padding: 20px;
-  background-color: var(--primary);
+  background-color: var(--dark);
   background-image: url(./img/header-bg.jpeg);
-  background-blend-mode: multiply;
+  background-blend-mode: overlay;
   background-size: cover;
   background-position: center;
   height: 100vh;
