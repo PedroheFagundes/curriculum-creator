@@ -107,13 +107,18 @@ footer {
 
 /* IDs */
 
-#personal-info,
-#expertise-area,
-#professional-experience,
+#centerFieldset {
+  display: flex;
+  margin: 0 auto;
+}
+
+#personalInfo,
+#expertiseArea,
+#professionalExperience,
 #certificate,
-#professional-organization,
+#professionalOrganization,
 #awards,
-#conferences-courses,
+#conferencesCourses,
 #education,
 #languages,
 #interests {
@@ -126,6 +131,20 @@ footer {
 }
 
 /* Classes */
+
+.formatedInfos {
+  flex-direction: column;
+  justify-content: left;
+}
+
+.formatedInfos p {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 90%;
+  padding: 0px;
+  margin: 0;
+}
 
 .column {
   display: flex;

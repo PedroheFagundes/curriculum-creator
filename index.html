@@ -24,12 +24,11 @@
       <button id="previousButton" onclick="previousSection()" disabled>Previous</button>
       <button id="nextButton" onclick="nextSection()">Next: Expertise Area</button>
     </div>
-    <button id="formated-curriculum-button" class="sectionOff" onclick="showCurriculum()">Confirm Curriculum Infos</button>
-
+    <button id="formatedCurriculumButton" class="sectionOn" onclick="showCurriculum()">Confirm Curriculum Infos</button>
   </div>
 
   <div id="sections">
-    <div id="personal-info" class="sectionOn">
+    <div id="personalInfo" class="sectionOn">
       <fieldset>
         <legend>Personal Info</legend>
 
@@ -43,7 +42,7 @@
         </label>
         <label>
           Personal Description:
-          <input id="personal_description" type="text" required placeholder="Agile, results oriented developer. Excellent with self time managment..." />
+          <input id="personalDescription" type="text" required placeholder="Agile, results oriented developer. Excellent with self time managment..." />
         </label>
         <label>
           E-mail:
@@ -51,7 +50,7 @@
         </label>
         <label>
           Phone Number:
-          <input id="phone-number" type="tel" required placeholder="(48) 1516-2342" />
+          <input id="phoneNumber" type="tel" required placeholder="(48) 1516-2342" />
         </label>
         <label>
           Location:
@@ -63,12 +62,12 @@
       </label>
       <label>
         Linkedin Profile:
-      <input id="linkedin-profile" type="text" required placeholder="linkedin.com/in/kateausten" />
+      <input id="linkedinProfile" type="text" required placeholder="linkedin.com/in/kateausten" />
     </label>
       </fieldset>
     </div>
 
-    <div id="expertise-area" class="sectionOff">
+    <div id="expertiseArea" class="sectionOff">
       <fieldset>
         <legend>Expertise Area</legend>
 
@@ -79,7 +78,7 @@
       </fieldset>
     </div>
 
-    <div id="professional-experience" class="sectionOff">
+    <div id="professionalExperience" class="sectionOff">
       <fieldset>
         <legend>Professional Experience</legend>
 
@@ -167,7 +166,7 @@
       </fieldset>
     </div>
 
-    <div id="professional-organization" class="sectionOff">
+    <div id="professionalOrganization" class="sectionOff">
       <fieldset>
         <legend>Professional Organizations</legend>
 
@@ -218,7 +217,7 @@
       </fieldset>
     </div>
 
-    <div id="conferences-courses" class="sectionOff">
+    <div id="conferencesCourses" class="sectionOff">
       <fieldset>
         <legend>Conferences & Courses</legend>
 
@@ -317,9 +316,51 @@
     </div>
   </div>
 
-  <div id="formated-curriculum" class="sectionOff">
-    <div class="canvas_div_pdf">
-      <h1>Teste</h1>
+  <div id="formatedCurriculum" class="sectionOff">
+    <div id="centerFieldset">
+      <div class="canvas_div_pdf">
+        <fieldset class="formatedInfos">
+          <legend>Formated Info</legend>
+          <fieldset>
+          <legend>Personal Info</legend>
+            <p>
+              <strong>Nome: </strong>
+              <label id="formatedName"></label>
+            </p>
+            <p>
+              <strong>Headline: </strong>
+              <label id="formatedHeadline"></label>
+            </p>
+            <p>
+              <strong>Personal Description: </strong>
+              <label id="formatedPersonalDescription"></label>
+            </p>
+            <p>
+              <strong>E-mail: </strong>
+              <label id="formatedEmail"></label>
+            </p>
+            <p>
+              <strong>Phone Number: </strong>
+              <label id="formatedPhoneNumber"></label>
+            </p>
+            <p>
+              <strong>Location: </strong>
+              <label id="formatedLocation"></label>
+            </p>
+            <p>
+              <strong>Personal Website: </strong>
+              <label id="formatedWebsite"></label>
+            </p>
+            <p>
+              <strong>Linkedin Profile: </strong>
+              <label id="formatedLinkedinProfile"></label>
+            </p>
+          </fieldset>
+          <fieldset>
+            <legend>Expertise Area</legend>
+          </fieldset>
+        </fieldset>
+      </div>
     </div>
   </div>
 
