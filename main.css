@@ -49,6 +49,11 @@ h1 {
 header {
   padding: 20px;
   background-color: var(--primary);
+  background-image: url(./img/header-bg.jpeg);
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
   text-align: center;
   color: var(--light);
 }
@@ -107,11 +112,7 @@ footer {
 
 /* IDs */
 
-#centerFieldset {
-  display: flex;
-  margin: 0 auto;
-}
-
+#formatedCurriculum,
 #personalInfo,
 #expertiseArea,
 #professionalExperience,
@@ -132,10 +133,6 @@ footer {
 
 /* Classes */
 
-.formatedInfos {
-  flex-direction: column;
-  justify-content: left;
-}
 
 .formatedInfos p {
   display: flex;

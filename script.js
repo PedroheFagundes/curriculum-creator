@@ -130,6 +130,7 @@ function saveToPDF() {
 function showCurriculum() {
   document.getElementById('formatedCurriculum').setAttribute("class", "sectionOn");
   setPersonalInfo();
+  setExpertiseArea();
 }
 
 function setPersonalInfo() {
@@ -141,4 +142,9 @@ function setPersonalInfo() {
   document.getElementById('formatedLocation').innerHTML = document.getElementById('location').value;
   document.getElementById('formatedWebsite').innerHTML = document.getElementById('website').value;
   document.getElementById('formatedLinkedinProfile').innerHTML = document.getElementById('linkedinProfile').value;
+}
+
+function setExpertiseArea() {
+  let expertiseArray = document.getElementById('expertiseAreaString').value.split(',');
+  document.getElementById('formatedExpertiseArea').innerHTML = expertiseArray;
 }
