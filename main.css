@@ -94,6 +94,10 @@ label {
   padding: 10px;
 }
 
+main {
+  height: 100vh;
+}
+
 a, span {
   text-decoration: none;
   color: var(--dark);
