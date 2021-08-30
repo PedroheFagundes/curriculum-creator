@@ -2,6 +2,10 @@
 
 let sectionCounter = 0;
 
+//Events
+
+document.documentElement.requestFullscreen({ navigationUI: 'hide' });
+
 // Functions
 
 function hideSections() {

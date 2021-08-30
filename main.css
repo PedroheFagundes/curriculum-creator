@@ -1,10 +1,10 @@
 /* Colors */
 
 :root {
-  --primary: #962715;
-  --dark: #1e1e20;
-  --medium: #bbc3c6;
-  --light: #efefef;
+  --primary: #aa4b41;
+  --dark: #2d3033;
+  --medium: #335252;
+  --light: #d4dde1;
 }
 
 /*Tags*/
@@ -80,9 +80,10 @@ fieldset {
 }
 
 legend {
+  padding-top: 40px;
   border-radius: 5px;
   text-align: center;
-  font-size: 20px;
+  font-size: 30px;
   font-weight: bold;
 }
 
