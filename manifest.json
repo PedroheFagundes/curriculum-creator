@@ -1,7 +1,4 @@
 {
-  "short_name": "Curriculum Creator",
-  "name": "Pedro Fagundes' Curriculum Creator",
-  "start_url": "/index.html",
   "display": "fullscreen",
   "orientation": "portrait"
 }
