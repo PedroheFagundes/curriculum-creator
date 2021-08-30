@@ -1,5 +1,6 @@
 {
-  "start_url": "/",
+  "start_url": "./",
+  "scope": ".",
   "display": "fullscreen",
   "orientation": "portrait"
 }
