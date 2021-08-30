@@ -4,7 +4,6 @@ let sectionCounter = 0;
 
 //Events
 
-document.documentElement.requestFullscreen();
 
 // Functions
 
