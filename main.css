@@ -10,13 +10,16 @@
 /*Tags*/
 
 body {
-  margin: 0;
   padding: 0;
   box-sizing: border-box;
   background-color: var(--medium);
   font-family: 'Roboto', sans-serif;
   color: var(--dark);
 }
+html, body {
+  margin: 0;
+  height: 100%;
+  overflow: hidden}
 
 button {
   background-color: var(--light);
@@ -58,10 +61,6 @@ header {
   color: var(--light);
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 input {
   margin: 5px 0px;
 }
@@ -100,7 +99,7 @@ main {
 
 a, span {
   text-decoration: none;
-  color: var(--dark);
+  color: var(--light);
   margin-right: 10px;
 }
 
