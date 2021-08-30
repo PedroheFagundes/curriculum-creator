@@ -50,16 +50,24 @@ h1 {
 }
 
 header {
-  padding: 20px;
+  padding: 30vh;
   background-color: var(--dark);
   background-image: url(./img/header-bg.jpeg);
   background-blend-mode: overlay;
   background-size: cover;
   background-position: center;
-  height: 90vh;
-  text-align: center;
+  height: 100vh;
+
+}
+
+header a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
   color: var(--light);
 }
+
 
 input {
   margin: 5px 0px;
@@ -94,16 +102,16 @@ label {
 }
 
 main {
-  height: 90vh;
+  height: 100vh;
 }
 
-a, span {
+footer div a, footer div span {
   text-decoration: none;
   color: var(--light);
   margin-right: 10px;
 }
 
-a:hover {
+footer div a:hover {
   color: var(--primary);
 }
 
@@ -160,6 +168,16 @@ footer {
 
 .sectionOn {
   display: flex;
+}
+
+.startCurriculum {
+  width: max-content;
+  border-radius: 1vh;
+  padding: 1vh;
+  background-color: var(--primary);
+  font-size: 5vh;
+  font-weight: bold;
+  margin-top: 20vh;
 }
 
 .start-finish {
