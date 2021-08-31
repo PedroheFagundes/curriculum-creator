@@ -50,7 +50,7 @@ h1 {
 }
 
 header {
-  padding: 30vh;
+  padding-top: 30vh;
   background-color: var(--dark);
   background-image: url(./img/header-bg.jpeg);
   background-blend-mode: overlay;
