@@ -1,43 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
   <link rel="manifest" href="/manifest.json">
-  <link rel="icon" type="image/png" href="/img/favicon.png"/>
-  <link rel="stylesheet" href="main.css">
+  <link rel="icon" type="image/png" href="/img/favicon.png" />
+  <link rel="stylesheet" href="./css/home-main.css">
+  <link rel="stylesheet" href="./css/sections.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
   <title>Curriculum Creator</title>
 </head>
+
 <body>
   <header>
-      <div class="headerDescription">
-        <h1>CURRICULUM CREATOR</h1>
-        <p>Create a curriculum easily, choose a theme and download it!</p>
-        <p>Your next job is awaiting you with a well-done curriculum!</p>
-      </div>
-      <div class="tilt"></div>
-    <a href="#main">
+    <div class="headerDescription">
+      <h1>CURRICULUM CREATOR</h1>
+      <p>Create a curriculum easily, choose a theme and download it!</p>
+      <p>Your next job is awaiting you with a well-done curriculum!</p>
+    </div>
+    <div class="tilt"></div>
+    <div class="tilt2"></div>
+    <a href="#personalInfo">
       <p class="startCurriculum">START MY CURRICULUM</p>
     </a>
   </header>
 
 
   <main id="main">
-  <div class="column">
-    <div id="sections-buttons">
-      <button id="previousButton" onclick="previousSection()" disabled>Previous</button>
-      <button id="nextButton" onclick="nextSection()">Next: Expertise Area</button>
-    </div>
-    <button id="formatedCurriculumButton" class="sectionOff" onclick="showCurriculum()">Confirm Curriculum Infos</button>
-  </div>
 
-  <div id="sections">
+    <div id="sections">
+      <div id="personalInfo" class="sectionOn">
+        <fieldset>
+          <legend>Personal Info</legend>
+
+          <label>
+            Full Name:
+            <input id="name" type="text" required placeholder="Kate Austen" />
+          </label>
+          <label>
+            Headline:
+            <input id="headline" type="text" required placeholder="Web Developer" />
+          </label>
+          <label>
+            Personal Description:
+            <input id="personalDescription" type="text" required
+              placeholder="Agile, results oriented developer. Excellent with self time managment..." />
+          </label>
+          <label>
+            E-mail:
+            <input id="email" type="email" required placeholder="kateausten@oceanic.com" />
+          </label>
+        </fieldset>
+      </div>
+
+
+      <!--
     <div id="personalInfo" class="sectionOn">
       <fieldset>
         <legend>Personal Info</legend>
@@ -76,318 +99,330 @@
     </label>
       </fieldset>
     </div>
+    -->
 
-    <div id="expertiseArea" class="sectionOff">
-      <fieldset>
-        <legend>Expertise Area</legend>
+      <div id="expertiseArea" class="sectionOff">
+        <fieldset>
+          <legend>Expertise Area</legend>
 
-        <label>
-          Expertise Areas (separated by comma):
-          <input id="expertiseAreaString" type="text" required placeholder="Leadership, Risk Management, Front-end Development" />
-        </label>
-      </fieldset>
-    </div>
+          <label>
+            Expertise Areas (separated by comma):
+            <input id="expertiseAreaString" type="text" required
+              placeholder="Leadership, Risk Management, Front-end Development" />
+          </label>
+        </fieldset>
+      </div>
 
-    <div id="professionalExperience" class="sectionOff">
-      <fieldset>
-        <legend>Professional Experience</legend>
+      <div id="professionalExperience" class="sectionOff">
+        <fieldset>
+          <legend>Professional Experience</legend>
 
-        <label>
-          Position Role:
-          <input id="" type="text" required placeholder="Jr Front-end Developer" />
-        </label>
-        <label>
-          Company Name:
-          <input id="" type="text" required placeholder="Oceanic Airlines" />
-        </label>
-        <label>
-          Company Location:
-          <input id="" type="text" required placeholder="Sidney, Australia" />
-        </label>
-        <label id="activity-period">
-          Activity Period:
-          <div class="start-finish">
-            <div>
-              Start:
-              <input id="start" type="date" required />
+          <label>
+            Position Role:
+            <input id="" type="text" required placeholder="Jr Front-end Developer" />
+          </label>
+          <label>
+            Company Name:
+            <input id="" type="text" required placeholder="Oceanic Airlines" />
+          </label>
+          <label>
+            Company Location:
+            <input id="" type="text" required placeholder="Sidney, Australia" />
+          </label>
+          <label id="activity-period">
+            Activity Period:
+            <div class="start-finish">
+              <div>
+                Start:
+                <input id="start" type="date" required />
+              </div>
+              <div>
+                Finish:
+                <input id="finish" type="date" required />
+              </div>
             </div>
-            <div>
-              Finish:
-              <input id="finish" type="date" required />
-            </div>
-          </div>
-        </label>
-        <label>
-          Achievements: <br>
-          Just one achievement for now, it'll be able to add more soon.
-          <input id="" type="text" required placeholder="Colaborated with the global developing team to deploy the main company product." />
-        </label>
+          </label>
+          <label>
+            Achievements: <br>
+            Just one achievement for now, it'll be able to add more soon.
+            <input id="" type="text" required
+              placeholder="Colaborated with the global developing team to deploy the main company product." />
+          </label>
 
-      </fieldset>
-    </div>
+        </fieldset>
+      </div>
 
-    <div id="certificate" class="sectionOff">
-      <fieldset>
-        <legend>Certificates</legend>
+      <div id="certificate" class="sectionOff">
+        <fieldset>
+          <legend>Certificates</legend>
 
-        <label>
+          <label>
             Certificate Title:
             <input id="" type="text" required placeholder="Introduction to Test Driven Development" />
-        </label>
-        <label>
-          Date of Conclusion:
-          <input id="" type="month" required />
-        </label>
-        <label>
-          Certificate Title:
-          <input id="" type="text" required placeholder="Introduction to Test Driven Development" />
-        </label>
-        <label>
-          Date of Conclusion:
-          <input id="" type="month" required />
-        </label>
-        <label>
-          Certificate Title:
-          <input id="" type="text" required placeholder="Introduction to Test Driven Development" />
-        </label>
-        <label>
-          Date of Conclusion:
-          <input id="" type="month" required />
-        </label>
-      </fieldset>
-    </div>
+          </label>
+          <label>
+            Date of Conclusion:
+            <input id="" type="month" required />
+          </label>
+          <label>
+            Certificate Title:
+            <input id="" type="text" required placeholder="Introduction to Test Driven Development" />
+          </label>
+          <label>
+            Date of Conclusion:
+            <input id="" type="month" required />
+          </label>
+          <label>
+            Certificate Title:
+            <input id="" type="text" required placeholder="Introduction to Test Driven Development" />
+          </label>
+          <label>
+            Date of Conclusion:
+            <input id="" type="month" required />
+          </label>
+        </fieldset>
+      </div>
 
-    <div id="awards" class="sectionOff">
-      <fieldset>
-        <legend>Awards</legend>
+      <div id="awards" class="sectionOff">
+        <fieldset>
+          <legend>Awards</legend>
 
-        <label>
-          Award Title:
-          <input id="" type="text" required placeholder="Annual Excellence Award" />
-        </label>
-        <label>
-          Award Date:
-          <input id="" type="month" required />
-        </label>
-        <label>
-          Company Name:
-          <input id="" type="text" required placeholder="Dharma Corporation" />
-        </label>
-      </fieldset>
-    </div>
+          <label>
+            Award Title:
+            <input id="" type="text" required placeholder="Annual Excellence Award" />
+          </label>
+          <label>
+            Award Date:
+            <input id="" type="month" required />
+          </label>
+          <label>
+            Company Name:
+            <input id="" type="text" required placeholder="Dharma Corporation" />
+          </label>
+        </fieldset>
+      </div>
 
-    <div id="professionalOrganization" class="sectionOff">
-      <fieldset>
-        <legend>Professional Organizations</legend>
+      <div id="professionalOrganization" class="sectionOff">
+        <fieldset>
+          <legend>Professional Organizations</legend>
 
-        <label>
+          <label>
             Organization name:
             <input id="" type="text" required placeholder="Dharma Corporation" />
-        </label>
+          </label>
 
-        <label id="activity-period">
-          Activity Period:
-          <div class="start-finish">
-            <div>
-              Start:
-              <input id="start" type="date" required />
+          <label id="activity-period">
+            Activity Period:
+            <div class="start-finish">
+              <div>
+                Start:
+                <input id="start" type="date" required />
+              </div>
+              <div>
+                Finish:
+                <input id="finish" type="date" required />
+              </div>
+              <div>
+                <input type="checkbox" name="" id="">
+                Presente
+              </div>
             </div>
-            <div>
-              Finish:
-              <input id="finish" type="date" required />
+          </label>
+          <label>
+            Organization name:
+            <input id="" type="text" required placeholder="Dharma Corporation" />
+          </label>
+
+          <label id="activity-period">
+            Activity Period:
+            <div class="start-finish">
+              <div>
+                Start:
+                <input id="start" type="date" required />
+              </div>
+              <div>
+                Finish:
+                <input id="finish" type="date" required />
+              </div>
+              <div>
+                <input type="checkbox" name="" id="">
+                Present
+              </div>
             </div>
-            <div>
-              <input type="checkbox" name="" id="">
-              Presente
-            </div>
-          </div>
-        </label>
-        <label>
-          Organization name:
-          <input id="" type="text" required placeholder="Dharma Corporation" />
-      </label>
+          </label>
+        </fieldset>
+      </div>
 
-      <label id="activity-period">
-        Activity Period:
-        <div class="start-finish">
-          <div>
-            Start:
-            <input id="start" type="date" required />
-          </div>
-          <div>
-            Finish:
-            <input id="finish" type="date" required />
-          </div>
-          <div>
-            <input type="checkbox" name="" id="">
-            Present
-          </div>
-        </div>
-      </label>
-      </fieldset>
-    </div>
+      <div id="conferencesCourses" class="sectionOff">
+        <fieldset>
+          <legend>Conferences & Courses</legend>
 
-    <div id="conferencesCourses" class="sectionOff">
-      <fieldset>
-        <legend>Conferences & Courses</legend>
+          <label>
+            Course Title:
+            <input id="" type="text" required placeholder="Annual Excellence Award" />
+          </label>
+          <label>
+            Course Date:
+            <input id="" type="month" required />
+          </label>
+          <label>
+            Institution Name:
+            <input id="" type="text" required placeholder="Dharma Corporation" />
+          </label>
+        </fieldset>
+      </div>
 
-        <label>
-          Course Title:
-          <input id="" type="text" required placeholder="Annual Excellence Award" />
-        </label>
-        <label>
-          Course Date:
-          <input id="" type="month" required />
-        </label>
-        <label>
-          Institution Name:
-          <input id="" type="text" required placeholder="Dharma Corporation" />
-        </label>
-      </fieldset>
-    </div>
+      <div id="education" class="sectionOff">
+        <fieldset>
+          <legend>Education</legend>
 
-    <div id="education" class="sectionOff">
-      <fieldset>
-        <legend>Education</legend>
-
-        <label>
+          <label>
             Title:
             <input id="" type="text" required placeholder="Masters Degree in Artificial Intelligence" />
-        </label>
-        <label>
-          Institution:
-          <input id="" type="text" required placeholder="Miskatonic University" />
-      </label>
-      <label id="activity-period">
-        Period:
-        <div class="start-finish">
-          <div>
-            Start:
-            <input id="start" type="date" required />
-          </div>
-          <div>
-            Finish:
-            <input id="finish" type="date" required />
-          </div>
-          <div>
-            <input type="checkbox" name="" id="">
-            In Course
-          </div>
-        </div>
-      </label>
-      </fieldset>
-    </div>
+          </label>
+          <label>
+            Institution:
+            <input id="" type="text" required placeholder="Miskatonic University" />
+          </label>
+          <label id="activity-period">
+            Period:
+            <div class="start-finish">
+              <div>
+                Start:
+                <input id="start" type="date" required />
+              </div>
+              <div>
+                Finish:
+                <input id="finish" type="date" required />
+              </div>
+              <div>
+                <input type="checkbox" name="" id="">
+                In Course
+              </div>
+            </div>
+          </label>
+        </fieldset>
+      </div>
 
-    <div id="languages" class="sectionOff">
-      <fieldset>
-        <legend>Languages</legend>
+      <div id="languages" class="sectionOff">
+        <fieldset>
+          <legend>Languages</legend>
 
-        <label>
+          <label>
             Language:
             <input id="" type="text" required placeholder="Esperanto" />
-        </label>
-        <label>
-          Proficiency:
-          <select name="proficiency">
-            <option value="">Elementary Proficiency</option>
-            <option value="">Limited Working Proficiency</option>
-            <option value="">Professional Working Proficiency</option>
-            <option value="">Full Professional Proficiency</option>
-            <option value="">Native / Bilingual Proficiency</option>
-          </select>
-        </label>
+          </label>
+          <label>
+            Proficiency:
+            <select name="proficiency">
+              <option value="">Elementary Proficiency</option>
+              <option value="">Limited Working Proficiency</option>
+              <option value="">Professional Working Proficiency</option>
+              <option value="">Full Professional Proficiency</option>
+              <option value="">Native / Bilingual Proficiency</option>
+            </select>
+          </label>
 
-        <label>
-          Language:
-          <input id="" type="text" required placeholder="Esperanto" />
-      </label>
-      <label>
-        Proficiency:
-        <select name="proficiency">
-          <option value="">Elementary Proficiency</option>
-          <option value="">Limited Working Proficiency</option>
-          <option value="">Professional Working Proficiency</option>
-          <option value="">Full Professional Proficiency</option>
-          <option value="">Native / Bilingual Proficiency</option>
-        </select>
-      </label>
-      </fieldset>
+          <label>
+            Language:
+            <input id="" type="text" required placeholder="Esperanto" />
+          </label>
+          <label>
+            Proficiency:
+            <select name="proficiency">
+              <option value="">Elementary Proficiency</option>
+              <option value="">Limited Working Proficiency</option>
+              <option value="">Professional Working Proficiency</option>
+              <option value="">Full Professional Proficiency</option>
+              <option value="">Native / Bilingual Proficiency</option>
+            </select>
+          </label>
+        </fieldset>
+      </div>
+
+      <div id="interests" class="sectionOff">
+        <fieldset>
+          <legend>Interests</legend>
+
+          <label>
+            Interests (separated by comma):
+            <input id="" type="text" required placeholder="Archery, Games, Music" />
+          </label>
+        </fieldset>
+      </div>
     </div>
 
-    <div id="interests" class="sectionOff">
-      <fieldset>
-        <legend>Interests</legend>
+    <div id="formatedCurriculum" class="sectionOff">
+      <div class="centerFieldset">
+        <div class="canvas_div_pdf">
+          <fieldset class="formatedInfos">
+            <legend>Formated Info</legend>
+            <h1>Personal Info</h1>
+            <p>
+              <strong>Nome: </strong>
+              <label id="formatedName"></label>
+            </p>
+            <p>
+              <strong>Headline: </strong>
+              <label id="formatedHeadline"></label>
+            </p>
+            <p>
+              <strong>Personal Description: </strong>
+              <label id="formatedPersonalDescription"></label>
+            </p>
+            <p>
+              <strong>E-mail: </strong>
+              <label id="formatedEmail"></label>
+            </p>
+            <p>
+              <strong>Phone Number: </strong>
+              <label id="formatedPhoneNumber"></label>
+            </p>
+            <p>
+              <strong>Location: </strong>
+              <label id="formatedLocation"></label>
+            </p>
+            <p>
+              <strong>Personal Website: </strong>
+              <label id="formatedWebsite"></label>
+            </p>
+            <p>
+              <strong>Linkedin Profile: </strong>
+              <label id="formatedLinkedinProfile"></label>
+            </p>
 
-        <label>
-          Interests (separated by comma):
-          <input id="" type="text" required placeholder="Archery, Games, Music" />
-        </label>
-      </fieldset>
+            <h1>Expertise Area</h1>
+            <p>
+              <strong>Areas: </strong>
+              <label id="formatedExpertiseArea"></label>
+            </p>
+          </fieldset>
+        </div>
+      </div>
     </div>
-  </div>
 
-  <div id="formatedCurriculum" class="sectionOff">
-    <div class="centerFieldset">
-    <div class="canvas_div_pdf">
-      <fieldset class="formatedInfos">
-        <legend>Formated Info</legend>
-          <h1>Personal Info</h1>
-          <p>
-            <strong>Nome: </strong>
-            <label id="formatedName"></label>
-          </p>
-          <p>
-            <strong>Headline: </strong>
-            <label id="formatedHeadline"></label>
-          </p>
-          <p>
-            <strong>Personal Description: </strong>
-            <label id="formatedPersonalDescription"></label>
-          </p>
-          <p>
-            <strong>E-mail: </strong>
-            <label id="formatedEmail"></label>
-          </p>
-          <p>
-            <strong>Phone Number: </strong>
-            <label id="formatedPhoneNumber"></label>
-          </p>
-          <p>
-            <strong>Location: </strong>
-            <label id="formatedLocation"></label>
-          </p>
-          <p>
-            <strong>Personal Website: </strong>
-            <label id="formatedWebsite"></label>
-          </p>
-          <p>
-            <strong>Linkedin Profile: </strong>
-            <label id="formatedLinkedinProfile"></label>
-          </p>
-
-          <h1>Expertise Area</h1>
-          <p>
-            <strong>Areas: </strong>
-            <label id="formatedExpertiseArea"></label>
-          </p>
-      </fieldset>
+    <div class="column">
+      <div id="sections-buttons">
+        <div id="previousButton" onclick="previousSection()" disabled>Previous</div>
+        <div id="nextButton" onclick="nextSection()">Next</div>
+      </div>
+      <button id="formatedCurriculumButton" class="sectionOff" onclick="showCurriculum()">Confirm Curriculum
+        Infos</button>
     </div>
-  </div>
-  </div>
 
-
-  <footer>
-    <div id="footer" class="footer">
+    <footer>
+      <div id="footer" class="footer">
         <span>Created by Pedro Fagundes</span>
         <a href="https://www.linkedin.com/in/pedrofagundes/" target="blank">LinkedIn</a>
         <a href="https://github.com/PedroheFagundes" target="blank">Github</a>
-    </div>
-  </footer>
+      </div>
+    </footer>
   </main>
-  
+
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.3/jspdf.min.js"></script>
   <script src="https://html2canvas.hertzen.com/dist/html2canvas.js"></script>
   <script src="script.js"></script>
 </body>
+
 </html>
