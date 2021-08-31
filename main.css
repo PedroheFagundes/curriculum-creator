@@ -2,8 +2,8 @@
 
 :root {
   --primary: #53FFA2;
-  --dark: #2d3931;
-  --light: #d9ebe2;
+  --dark: #212523;
+  --light: #e5e5e5;
 }
 
 /*Tags*/
@@ -49,7 +49,6 @@ h1 {
 }
 
 header {
-  padding: 20px;
   background-color: var(--dark);
   background-image: url(./img/header-bg.jpg);
   background-blend-mode: multiply;
@@ -58,19 +57,15 @@ header {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
 
 
 }
 
 header a {
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   text-align: center;
   text-decoration: none;
-  color: var(--light);
+  padding-bottom: 40px;
 }
 
 
@@ -167,6 +162,28 @@ footer {
   justify-content: space-evenly;
 }
 
+.headerDescription {
+  padding: 30px 5px;
+  background-color: var(--light);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.headerDescription:before {
+  content: '';
+  width: 124%;
+  height: 30px;
+  background: var(--primary);
+  position: absolute;
+  left: -20%;
+  bottom: 300px;
+  transform: rotate(5deg);
+  -webkit-transform: rotate(5deg);
+  -moz-transform: rotate(5deg);
+}
+
 .sectionOff {
   display: none;
 }
@@ -181,7 +198,6 @@ footer {
   color: var(--primary);
   font-size: 30px;
   font-weight: bold;
-  margin-top: 100px;
 }
 
 .start-finish {
