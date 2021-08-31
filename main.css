@@ -1,10 +1,9 @@
 /* Colors */
 
 :root {
-  --primary: #aa4b41;
-  --dark: #2d3033;
-  --medium: #335252;
-  --light: #d4dde1;
+  --primary: #53FFA2;
+  --dark: #392D2D;
+  --light: #E5E5E5;
 }
 
 /*Tags*/
@@ -12,7 +11,7 @@
 body {
   padding: 0;
   box-sizing: border-box;
-  background-color: var(--medium);
+  background-color: var(--dark);
   font-family: 'Roboto', sans-serif;
   color: var(--dark);
 }
@@ -52,8 +51,8 @@ h1 {
 header {
   padding: 20px;
   background-color: var(--dark);
-  background-image: url(./img/header-bg.jpeg);
-  background-blend-mode: overlay;
+  background-image: url(./img/header-bg.jpg);
+  background-blend-mode: multiply;
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -179,7 +178,7 @@ footer {
 .startCurriculum {
   border-radius: 5px;
   padding: 5px 10px;
-  background-color: var(--primary);
+  color: var(--primary);
   font-size: 30px;
   font-weight: bold;
   margin-top: 100px;
