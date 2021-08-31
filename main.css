@@ -14,7 +14,7 @@ body {
   box-sizing: border-box;
   background-color: var(--dark);
   font-family: 'Roboto', sans-serif;
-  color: var(--dark);
+  color: var(--light);
 }
 html, body {
   margin: 0;
@@ -52,7 +52,7 @@ h1 {
 header {
   background-color: var(--dark);
   background-image: url(./img/header-bg.jpg);
-  background-blend-mode: multiply;
+  background-blend-mode: overlay;
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -168,7 +168,7 @@ footer {
 .headerDescription {
   margin: 0;
   padding: 100px 0px;
-  background-color: var(--light);
+  background-color: var(--dark);
   display: flex;
   flex-direction: column;
   justify-content: center;
