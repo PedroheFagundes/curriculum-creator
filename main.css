@@ -59,8 +59,10 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+}
 
-
+header div h1 {
+  font-size: 30px;
 }
 
 header a {
@@ -196,7 +198,7 @@ footer {
 .startCurriculum {
   border-radius: 5px;
   padding: 0px 30px;
-  padding-top: 10px;
+  padding-top: 30px;
   color: var(--primary);
   font-size: 30px;
   font-weight: bold;
