@@ -1,0 +1,14 @@
+/* IDs */
+
+#formatedCurriculum {
+  justify-content: center;
+}
+
+.formatedInfos p {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 90%;
+  padding: 0px;
+  margin: 0;
+}

@@ -1,10 +1,11 @@
-/* Colors */
+/* Variables */
 
 :root {
   --primary: #53FFA2;
   --dark: #303030;
-  --medium: #838383;
-  --light: #f0f0f0;
+  --light: #e5e5e5;
+
+  --sections-width: 75%;
 }
 
 /*Tags*/
@@ -20,42 +21,11 @@ body {
 html, body {
   margin: 0;
   height: 100%;
-  overflow: hidden}
-
-button {
-  background-color: var(--light);
-  border-radius: 5px;
-  border: none;
-  box-shadow: 4px 4px 10px rgb(0 0 0 / 0.5);
-  padding: 15px 20px;
-  margin: 20px 5vw;
-  font-size: 20px;
-  font-weight: bold;
-  transition: all 0.1s linear;
-}
-
-button:hover {
-  background-color: var(--primary);
-  color: var(--light);
-}
-
-button:disabled,
-button[disabled] {
-  background-color: var(--light);
-  color: var(--medium);
-}
-
-h1 {
-  margin: 0;
-  padding: 0;
+  overflow: hidden
 }
 
 header {
   background-color: var(--dark);
-  background-image: url(./img/header-bg.jpg);
-  background-blend-mode: multiply;
-  background-size: cover;
-  background-position: center;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -72,99 +42,11 @@ header a {
   padding-bottom: 40px;
 }
 
-
-input {
-  margin: 5px 0px;
-}
-
-fieldset {
-  border: none;
-  background-color: var(--light);
-  box-shadow: 4px 4px 10px rgb(0 0 0 / 0.5);
-  margin-top: 10px;
-  width: 90vw;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-around;
-  border-radius: 5px;
-}
-
-legend {
-  padding-top: 40px;
-  border-radius: 5px;
-  text-align: center;
-  font-size: 30px;
-  font-weight: bold;
-}
-
-label {
-  display: flex;
-  flex-direction: column;
-  width: 45%;
-  padding: 10px;
-}
-
 main {
   height: 100vh;
 }
 
-footer div a, footer div span {
-  text-decoration: none;
-  color: var(--light);
-  margin-right: 10px;
-}
-
-footer div a:hover {
-  color: var(--primary);
-}
-
-footer {
-  margin: 10px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-}
-
-/* IDs */
-
-#formatedCurriculum,
-#personalInfo,
-#expertiseArea,
-#professionalExperience,
-#certificate,
-#professionalOrganization,
-#awards,
-#conferencesCourses,
-#education,
-#languages,
-#interests {
-  justify-content: center;
-}
-
-#sections-buttons {
-  display: flex;
-  flex-direction: row;
-}
-
 /* Classes */
-
-
-.formatedInfos p {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  width: 90%;
-  padding: 0px;
-  margin: 0;
-}
-
-.column {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-}
 
 .headerDescription {
   margin: 0;
@@ -197,36 +79,10 @@ footer {
   top: -17px;
 }
 
-.sectionOff {
-  display: none;
-}
-
-.sectionOn {
-  display: flex;
-}
-
 .startCurriculum {
-  border-radius: 5px;
   padding: 0px 30px;
   padding-top: 30px;
   color: var(--primary);
   font-size: 30px;
   font-weight: bold;
-}
-
-.start-finish {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
-
-/* Responsiviness */
-
-@media screen and (max-width: 750px) {
-
-  label {
-    width: 90%;
-  }
-
 }

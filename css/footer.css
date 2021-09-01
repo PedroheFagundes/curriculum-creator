@@ -1,0 +1,16 @@
+footer div a, footer div span {
+  text-decoration: none;
+  color: var(--light);
+  margin-right: 10px;
+}
+
+footer div a:hover {
+  color: var(--primary);
+}
+
+footer {
+  margin: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
