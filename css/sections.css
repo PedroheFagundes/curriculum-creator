@@ -102,6 +102,7 @@ main {
   width: var(--sections-width);
   display: flex;
   justify-content: space-between;
+  cursor: pointer;
 }
 
 .sectionOff {

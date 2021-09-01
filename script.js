@@ -7,6 +7,10 @@ let sectionCounter = 0;
 
 // Functions
 
+function hideHomeScreen () {
+  document.getElementById('homeScreen').setAttribute("class", "sectionOff");
+}
+
 function hideSections() {
   for( let i = 0; i < document.getElementById('sections').children.length; i++) {
     document.getElementById('sections').children[i].setAttribute("class", "sectionOff");
