@@ -32,7 +32,7 @@ input:-webkit-autofill {
   -webkit-text-fill-color: var(--light) !important;
 }
 
-label {
+.group label {
   position: absolute;
   top: 37px;
   color: var(--light);
@@ -102,7 +102,6 @@ main {
   width: var(--sections-width);
   display: flex;
   justify-content: space-between;
-  cursor: pointer;
 }
 
 .sectionOff {
@@ -118,15 +117,25 @@ main {
 }
 
 .progressBar {
-  width: 100%;
   height: 70px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+}
+
+.progressBarInner {
   background-color: var(--primary);
+  height: 100%;
+  transition: all ease .5s;
 }
 
 .progressNumber {
   width: var(--sections-width);
   text-align: right;
-  padding: 25px 0px;
+  padding-bottom: 25px;
+  padding-top: 95px;
+
 }
 
 .topSectionsScreen {

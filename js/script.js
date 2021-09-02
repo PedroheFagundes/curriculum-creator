@@ -1,5 +1,6 @@
 // Initial Data
 
+let inputCounter = 0;
 let sectionCounter = 0;
 
 //Events
@@ -9,26 +10,37 @@ let sectionCounter = 0;
 
 function hideHomeScreen () {
   document.getElementById('homeScreen').setAttribute("class", "sectionOff");
+  document.getElementById('progressNumber-total').innerHTML = document.getElementById('sections').children.length;
+  document.getElementById('progressBar').setAttribute("class", "sectionOn");
+  progressBarUpdate();
 }
 
-function hideSections() {
+function hideInputs() {
   for( let i = 0; i < document.getElementById('sections').children.length; i++) {
     document.getElementById('sections').children[i].setAttribute("class", "sectionOff");
     }  
 }
 
-function selectSection() {
-  switch (sectionCounter) {
-    case 0:
-      console.log(sectionCounter);
-      document.getElementById('personalInfo').setAttribute("class", "sectionOn");
-      document.getElementById('previousButton').setAttribute("disabled", "disabled");
+function progressBarUpdate() {
+  let percentage = Math.floor(((inputCounter + 1)/ document.getElementById('sections').children.length) * 100);
 
+  document.querySelector('.progressBarInner').style.width = `${percentage}%`;
+}
+
+function selectInput() {
+  switch (inputCounter) {
+    case 0:
+      document.getElementById('personalInfo-name').setAttribute("class", "sectionOn");
+      document.getElementById('previousButton').setAttribute("disabled", "disabled");
+      document.getElementById('progressNumber-current').innerHTML = inputCounter + 1;
+      progressBarUpdate();
       break;
 
     case 1:
-      document.getElementById('expertiseArea').setAttribute("class", "sectionOn");
+      document.getElementById('personalInfo-headline').setAttribute("class", "sectionOn");
       document.getElementById('previousButton').removeAttribute("disabled");
+      document.getElementById('progressNumber-current').innerHTML = inputCounter + 1;
+      progressBarUpdate();
       break;
 
     case 2:
@@ -70,16 +82,16 @@ function selectSection() {
   }
 }
 
-function nextSection() {
-  hideSections();
-  sectionCounter++;
-  selectSection();
+function nextInput() {
+  hideInputs();
+  inputCounter++;
+  selectInput();
 }
 
-function previousSection() {
-  hideSections();
-  sectionCounter--;
-  selectSection();
+function previousInput() {
+  hideInputs();
+  inputCounter--;
+  selectInput();
 }
 
 function saveToPDF() {

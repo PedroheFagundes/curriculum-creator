@@ -39,13 +39,21 @@
   <main id="main">
 
     <div class="topSectionsScreen">
-      <div class="progressBar"></div>
-      <div class="progressNumber">1/25</div>
+      <div id="progressBar" class="sectionOff">
+        <div class="progressBar">
+          <div class="progressBarInner"></div>
+        </div>
+      </div>
+      <div class="progressNumber">
+        <label id="progressNumber-current">1</label>
+        /
+        <label id="progressNumber-total">25</label>
+      </div>
       <div class="sectionName">PERSONAL INFO</div>
     </div>
     <div class="bottomSectionsScreen">
       <div id="sections">
-        <div id="personalInfo" class="sectionOn">
+        <div id="personalInfo-name" class="sectionOn">
           <div class="centered">
             <div class="group">
               <input type="text" id="name" required>
@@ -53,11 +61,20 @@
               <div class="bar"></div>
             </div>
           </div>
+        </div>
 
-
+        <div id="personalInfo-headline" class="sectionOff">
+          <div class="centered">
+            <div class="group">
+              <input type="text" id="headline" required>
+              <label for="headline">Headline</label>
+              <div class="bar"></div>
+            </div>
+          </div>
         </div>
 
         <div id="expertiseArea" class="sectionOff">
+          teste
         </div>
 
         <div id="professionalExperience" class="sectionOff">
@@ -88,8 +105,8 @@
       <!-- Sections buttons Next and Previous  -->
       <div class="column">
         <div class="sectionsButtons">
-          <div id="previousButton" onclick="previousSection()" disabled>Previous</div>
-          <div id="nextButton" onclick="nextSection()">Next</div>
+          <div id="previousButton" onclick="previousInput()" disabled>Previous</div>
+          <div id="nextButton" onclick="nextInput()">Next</div>
         </div>
         <button id="formatedCurriculumButton" class="sectionOff" onclick="showCurriculum()">Confirm Curriculum Infos</button>
       </div>
@@ -161,7 +178,7 @@
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.3/jspdf.min.js"></script>
   <script src="https://html2canvas.hertzen.com/dist/html2canvas.js"></script>
-  <script src="script.js"></script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
