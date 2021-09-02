@@ -117,7 +117,7 @@ main {
 }
 
 .progressBar {
-  height: 70px;
+  height: 20px;
   position: fixed;
   left: 0;
   top: 0;
@@ -134,7 +134,7 @@ main {
   width: var(--sections-width);
   text-align: right;
   padding-bottom: 25px;
-  padding-top: 95px;
+  padding-top: 45px;
 
 }
 
