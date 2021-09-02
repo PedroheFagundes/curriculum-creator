@@ -9,15 +9,21 @@ let sectionCounter = 0;
 // Functions
 
 function hideHomeScreen () {
-  document.getElementById('homeScreen').setAttribute("class", "sectionOff");
+  document.getElementById('homeScreen').setAttribute("class", "showOff");
   document.getElementById('progressNumber-total').innerHTML = document.getElementById('sections').children.length;
-  document.getElementById('progressBar').setAttribute("class", "sectionOn");
+  document.getElementById('progressBar').setAttribute("class", "showOn");
   progressBarUpdate();
+}
+
+function showHomeScreen () {
+  document.getElementById('homeScreen').setAttribute("class", "showOn");
+  document.getElementById('progressBar').setAttribute("class", "showOff");
+  inputCounter = 0;
 }
 
 function hideInputs() {
   for( let i = 0; i < document.getElementById('sections').children.length; i++) {
-    document.getElementById('sections').children[i].setAttribute("class", "sectionOff");
+    document.getElementById('sections').children[i].setAttribute("class", "showOff");
     }  
 }
 
@@ -30,54 +36,54 @@ function progressBarUpdate() {
 function selectInput() {
   switch (inputCounter) {
     case 0:
-      document.getElementById('personalInfo-name').setAttribute("class", "sectionOn");
-      document.getElementById('previousButton').setAttribute("disabled", "disabled");
+      document.getElementById('personalInfo-name').setAttribute("class", "showOn");
       document.getElementById('progressNumber-current').innerHTML = inputCounter + 1;
+      document.getElementById('previousButtonText').innerHTML = "Home";
       progressBarUpdate();
       break;
 
     case 1:
-      document.getElementById('personalInfo-headline').setAttribute("class", "sectionOn");
-      document.getElementById('previousButton').removeAttribute("disabled");
+      document.getElementById('personalInfo-headline').setAttribute("class", "showOn");
       document.getElementById('progressNumber-current').innerHTML = inputCounter + 1;
+      document.getElementById('previousButtonText').innerHTML = "Previous";
       progressBarUpdate();
       break;
 
     case 2:
-      document.getElementById('professionalExperience').setAttribute("class", "sectionOn");
+      document.getElementById('professionalExperience').setAttribute("class", "showOn");
       break;
 
     case 3:
-      document.getElementById('certificate').setAttribute("class", "sectionOn");
+      document.getElementById('certificate').setAttribute("class", "showOn");
       break;
 
     case 4:
-      document.getElementById('awards').setAttribute("class", "sectionOn");
+      document.getElementById('awards').setAttribute("class", "showOn");
       break;
 
     case 5:
-      document.getElementById('professionalOrganization').setAttribute("class", "sectionOn");
+      document.getElementById('professionalOrganization').setAttribute("class", "showOn");
       break;
 
     case 6:
-      document.getElementById('conferencesCourses').setAttribute("class", "sectionOn");
+      document.getElementById('conferencesCourses').setAttribute("class", "showOn");
       break;
 
     case 7:
-      document.getElementById('education').setAttribute("class", "sectionOn");
+      document.getElementById('education').setAttribute("class", "showOn");
       break;
 
     case 8:
-      document.getElementById('languages').setAttribute("class", "sectionOn");
+      document.getElementById('languages').setAttribute("class", "showOn");
       document.getElementById('nextButton').removeAttribute("disabled");
-      document.getElementById('formatedCurriculumButton').setAttribute("class", "sectionOff");
-      document.getElementById('formatedCurriculum').setAttribute("class", "sectionOff");
+      document.getElementById('formatedCurriculumButton').setAttribute("class", "showOff");
+      document.getElementById('formatedCurriculum').setAttribute("class", "showOff");
       break;
 
     case 9:
-      document.getElementById('interests').setAttribute("class", "sectionOn");
+      document.getElementById('interests').setAttribute("class", "showOn");
       document.getElementById('nextButton').setAttribute("disabled", "disabled");
-      document.getElementById('formatedCurriculumButton').setAttribute("class", "sectionOn");
+      document.getElementById('formatedCurriculumButton').setAttribute("class", "showOn");
       break;
   }
 }
@@ -91,6 +97,9 @@ function nextInput() {
 function previousInput() {
   hideInputs();
   inputCounter--;
+  if(inputCounter < 0) {
+    showHomeScreen();
+  }
   selectInput();
 }
 
@@ -127,7 +136,7 @@ function saveToPDF() {
 }
 
 function showCurriculum() {
-  document.getElementById('formatedCurriculum').setAttribute("class", "sectionOn");
+  document.getElementById('formatedCurriculum').setAttribute("class", "showOn");
   setPersonalInfo();
   setExpertiseArea();
 }

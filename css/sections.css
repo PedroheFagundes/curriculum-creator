@@ -1,5 +1,11 @@
 /* Tags */
 
+div .disabled {
+  pointer-events: none;
+
+  opacity: 0.5;
+}
+
 input {
   display: block;
   width: 100%;
@@ -104,11 +110,11 @@ main {
   justify-content: space-between;
 }
 
-.sectionOff {
+.showOff {
   display: none;
 }
 
-.sectionOn {
+.showOn {
   display: flex;
 }
 

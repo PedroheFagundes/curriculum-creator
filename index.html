@@ -22,7 +22,7 @@
 <body>
 
   <!-- Home Screen -->
-  <header id="homeScreen" class="sectionOn">
+  <header id="homeScreen" class="showOn">
     <div class="headerDescription">
       <h1>CURRICULUM CREATOR</h1>
       <p>Create a curriculum easily, choose a theme and download it!</p>
@@ -39,7 +39,7 @@
   <main id="main">
 
     <div class="topSectionsScreen">
-      <div id="progressBar" class="sectionOff">
+      <div id="progressBar" class="showOff">
         <div class="progressBar">
           <div class="progressBarInner"></div>
         </div>
@@ -53,7 +53,7 @@
     </div>
     <div class="bottomSectionsScreen">
       <div id="sections">
-        <div id="personalInfo-name" class="sectionOn">
+        <div id="personalInfo-name" class="showOn">
           <div class="centered">
             <div class="group">
               <input type="text" id="name" required>
@@ -63,7 +63,7 @@
           </div>
         </div>
 
-        <div id="personalInfo-headline" class="sectionOff">
+        <div id="personalInfo-headline" class="showOff">
           <div class="centered">
             <div class="group">
               <input type="text" id="headline" required>
@@ -73,47 +73,49 @@
           </div>
         </div>
 
-        <div id="expertiseArea" class="sectionOff">
+        <div id="expertiseArea" class="showOff">
           teste
         </div>
 
-        <div id="professionalExperience" class="sectionOff">
+        <div id="professionalExperience" class="showOff">
         </div>
 
-        <div id="certificate" class="sectionOff">
+        <div id="certificate" class="showOff">
         </div>
 
-        <div id="awards" class="sectionOff">
+        <div id="awards" class="showOff">
         </div>
 
-        <div id="professionalOrganization" class="sectionOff">
+        <div id="professionalOrganization" class="showOff">
         </div>
 
-        <div id="conferencesCourses" class="sectionOff">
+        <div id="conferencesCourses" class="showOff">
         </div>
 
-        <div id="education" class="sectionOff">
+        <div id="education" class="showOff">
         </div>
 
-        <div id="languages" class="sectionOff">
+        <div id="languages" class="showOff">
         </div>
 
-        <div id="interests" class="sectionOff">
+        <div id="interests" class="showOff">
         </div>
       </div>
 
       <!-- Sections buttons Next and Previous  -->
       <div class="column">
         <div class="sectionsButtons">
-          <div id="previousButton" onclick="previousInput()" disabled>Previous</div>
+          <div id="previousButton" onclick="previousInput()">
+            <label id="previousButtonText">Home</label>
+          </div>
           <div id="nextButton" onclick="nextInput()">Next</div>
         </div>
-        <button id="formatedCurriculumButton" class="sectionOff" onclick="showCurriculum()">Confirm Curriculum Infos</button>
+        <button id="formatedCurriculumButton" class="showOff" onclick="showCurriculum()">Confirm Curriculum Infos</button>
       </div>
     </div>
 
     <!-- Formated Curriculum to download -->
-    <div id="formatedCurriculum" class="sectionOff">
+    <div id="formatedCurriculum" class="showOff">
       <div class="centerFieldset">
         <div class="canvas_div_pdf">
           <fieldset class="formatedInfos">
