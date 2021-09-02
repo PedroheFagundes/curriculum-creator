@@ -50,7 +50,9 @@ function selectInput() {
       break;
 
     case 2:
-      document.getElementById('professionalExperience').setAttribute("class", "showOn");
+      document.getElementById('personalInfo-description').setAttribute("class", "showOn");
+      document.getElementById('progressNumber-current').innerHTML = inputCounter + 1;
+      progressBarUpdate();
       break;
 
     case 3:
