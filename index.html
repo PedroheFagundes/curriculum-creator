@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
-  <link rel="icon" type="image/png" href="/img/favicon.png" />
+  <link rel="icon" type="image/png" href="img/favicon.png" />
   <link rel="stylesheet" href="./css/home-main.css">
   <link rel="stylesheet" href="./css/sections.css">
   <link rel="stylesheet" href="./css/responsiveness.css">
@@ -38,6 +38,7 @@
   <!-- Main Sections -->
   <main id="main">
 
+    <!-- Top half of screen -->
     <div class="topSectionsScreen">
       <div id="progressBar" class="showOff">
         <div class="progressBar">
@@ -49,10 +50,14 @@
         /
         <label id="progressNumber-total">25</label>
       </div>
-      <div class="sectionName">PERSONAL INFO</div>
+      <div id="sectionName">PERSONAL INFO</div>
     </div>
+
+    <!-- Bottom half of screen -->
     <div class="bottomSectionsScreen">
       <div id="sections">
+
+        <!-- Personal Info Section -->
         <div id="personalInfo-name" class="showOn">
           <div class="centered">
             <div class="group">
@@ -83,32 +88,56 @@
           </div>
         </div>
 
-        <div id="expertiseArea" class="showOff">
-          teste
+        <div id="personalInfo-email" class="showOff">
+          <div class="centered">
+            <div class="group">
+              <input type="text" id="email" required>
+              <label for="email">E-mail</label>
+              <div class="bar"></div>
+            </div>
+          </div>
         </div>
 
-        <div id="professionalExperience" class="showOff">
+        <div id="personalInfo-phone" class="showOff">
+          <div class="centered">
+            <div class="group">
+              <input type="text" id="phone" required>
+              <label for="phone">Phone Number</label>
+              <div class="bar"></div>
+            </div>
+          </div>
         </div>
 
-        <div id="certificate" class="showOff">
+        <div id="personalInfo-location" class="showOff">
+          <div class="centered">
+            <div class="group">
+              <input type="text" id="location" required>
+              <label for="location">Location</label>
+              <div class="bar"></div>
+            </div>
+          </div>
         </div>
 
-        <div id="awards" class="showOff">
+        <div id="personalInfo-linkedin" class="showOff">
+          <div class="centered">
+            <div class="group">
+              <input type="text" id="linkedin" required>
+              <label for="linkedin">Linkedin</label>
+              <div class="bar"></div>
+            </div>
+          </div>
         </div>
 
-        <div id="professionalOrganization" class="showOff">
-        </div>
+        <!-- Skills Section -->
 
-        <div id="conferencesCourses" class="showOff">
-        </div>
-
-        <div id="education" class="showOff">
-        </div>
-
-        <div id="languages" class="showOff">
-        </div>
-
-        <div id="interests" class="showOff">
+        <div id="skillSection" class="showOff">
+          <div class="centered">
+            <div class="group">
+              <input type="text" id="skill" required>
+              <label for="skill">Skills</label>
+              <div class="bar"></div>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -190,7 +219,8 @@
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.3/jspdf.min.js"></script>
   <script src="https://html2canvas.hertzen.com/dist/html2canvas.js"></script>
-  <script src="js/script.js"></script>
+  <script src="js/home-main.js"></script>
+  <script src="js/sections.js"></script>
+  <script src="js/formatedCurriculum.js"></script>
 </body>
-
 </html>
