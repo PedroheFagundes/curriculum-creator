@@ -58,17 +58,42 @@ main {
 .headerDescription {
   margin: 0;
   padding: 0;
-  height: 55vh;
+  padding-bottom: 40px;
+  height: 50vh;
   background-color: var(--dark);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   text-align: center;
+
+}
+
+.homeText {
+  font-family: 'Share Tech', sans-serif;
+}
+
+.homeText p {
+  font-size: 20px;
+  padding: 0px 30px;
+  padding-bottom: 20px;
+}
+
+.homeText p strong {
+  color: var(--primary);
+}
+
+.homeTextLeft {
+  text-align: left;
+}
+
+.homeTextRight {
+  text-align: right;
 }
 
 .menu {
   display: flex;
   padding: 5px;
+  padding-left: 10px;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
