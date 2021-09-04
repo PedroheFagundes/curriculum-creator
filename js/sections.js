@@ -38,16 +38,39 @@ function selectInput() {
 
     case 5:
       document.getElementById('personalInfo-location').setAttribute("class", "showOn");
+      document.getElementById('nextButton').innerHTML = "Next";
+
       break;
 
     case 6:
       document.getElementById('personalInfo-linkedin').setAttribute("class", "showOn");
       document.getElementById('sectionName').innerHTML = "PERSONAL INFO";
+      document.getElementById('nextButton').innerHTML = "Next Section";
+
       break;
 
     case 7:
       document.getElementById('skillSection').setAttribute("class", "showOn");
       document.getElementById('sectionName').innerHTML = "SKILLS";
+      document.getElementById('nextButton').innerHTML = "Next Section";
+      break;
+
+    case 8:
+      document.getElementById('workExperience-title').setAttribute("class", "showOn");
+      document.getElementById('sectionName').innerHTML = "WORK EXPERIENCE";
+      document.getElementById('nextButton').innerHTML = "Next";
+      break;
+
+    case 9:
+      document.getElementById('workExperience-company').setAttribute("class", "showOn");
+      break;
+
+    case 10:
+      document.getElementById('workExperience-periodStart').setAttribute("class", "showOn");
+      break;
+
+    case 11:
+      document.getElementById('workExperience-periodFinish').setAttribute("class", "showOn");
       break;
   }
 
