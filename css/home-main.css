@@ -48,18 +48,35 @@ main {
 
 /* Classes */
 
+.burgerLine {
+  width: 25px;
+  height: 3px;
+  background-color: var(--light);
+  margin: 5px;
+}
+
 .headerDescription {
   margin: 0;
-  padding: 100px 0px;
+  padding: 0;
+  height: 55vh;
   background-color: var(--dark);
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   text-align: center;
 }
 
+.menu {
+  display: flex;
+  padding: 10px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .menu img {
-  width: 150px;
+  width: 250px;
+  height: 11.14px;
 }
 
 
