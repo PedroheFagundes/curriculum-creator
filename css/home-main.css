@@ -59,7 +59,7 @@ main {
   margin: 0;
   padding: 0;
   padding-bottom: 40px;
-  height: 50vh;
+  height: 45vh;
   background-color: var(--dark);
   display: flex;
   flex-direction: column;
