@@ -58,6 +58,10 @@ main {
   text-align: center;
 }
 
+.menu img {
+  width: 150px;
+}
+
 
 .tilt, .tilt2 {
   position: relative;
