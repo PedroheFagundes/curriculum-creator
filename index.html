@@ -7,11 +7,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
   <link rel="icon" type="image/png" href="img/cc-logo.png" />
-  <link rel="stylesheet" href="./css/home-main.css">
+  <link rel="stylesheet" href="./css/home.css">
   <link rel="stylesheet" href="./css/sections.css">
   <link rel="stylesheet" href="./css/responsiveness.css">
   <link rel="stylesheet" href="./css/formatedCurriculum.css">
   <link rel="stylesheet" href="./css/footer.css">
+  <link rel="stylesheet" href="./css/review.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Share+Tech&display=swap" rel="stylesheet">
@@ -42,17 +43,17 @@
     </div>
     <div class="tilt"></div>
     <div class="tilt2"></div>
-    <a href="#personalInfo" onclick="hideHomeScreen()">
+    <a onclick="showSections()">
       <p class="startCurriculum">START MY CURRICULUM</p>
     </a>
   </header>
 
   <!-- Main Sections -->
-  <main id="main">
+  <main id="main" class="showOff">
 
     <!-- Top half of screen -->
     <div class="topSectionsScreen">
-      <div id="progressBar" class="showOff">
+      <div id="progressBar">
         <div class="progressBar">
           <div class="progressBarInner"></div>
         </div>
@@ -290,75 +291,79 @@
         <button id="formatedCurriculumButton" class="showOff" onclick="showCurriculum()">Confirm Curriculum Infos</button>
       </div>
     </div>
+  </main>
 
-    <!-- Formated Curriculum to download -->
-    <div id="formatedCurriculum" class="showOff">
-      <div class="centerFieldset">
-        <div class="canvas_div_pdf">
-          <fieldset class="formatedInfos">
-            <legend>Formated Info</legend>
-            <h1>Personal Info</h1>
-            <p>
-              <strong>Nome: </strong>
-              <label id="formatedName"></label>
-            </p>
-            <p>
-              <strong>Headline: </strong>
-              <label id="formatedHeadline"></label>
-            </p>
-            <p>
-              <strong>Personal Description: </strong>
-              <label id="formatedPersonalDescription"></label>
-            </p>
-            <p>
-              <strong>E-mail: </strong>
-              <label id="formatedEmail"></label>
-            </p>
-            <p>
-              <strong>Phone Number: </strong>
-              <label id="formatedPhoneNumber"></label>
-            </p>
-            <p>
-              <strong>Location: </strong>
-              <label id="formatedLocation"></label>
-            </p>
-            <p>
-              <strong>Personal Website: </strong>
-              <label id="formatedWebsite"></label>
-            </p>
-            <p>
-              <strong>Linkedin Profile: </strong>
-              <label id="formatedLinkedinProfile"></label>
-            </p>
+  <!-- Review Screen -->
+  <div id="review" class="showOff">
+    <h1>hello</h1>
+  </div>
 
-            <h1>Expertise Area</h1>
-            <p>
-              <strong>Areas: </strong>
-              <label id="formatedExpertiseArea"></label>
-            </p>
-          </fieldset>
-        </div>
+  <!-- Formated Curriculum to download -->
+  <div id="formatedCurriculum" class="showOff">
+    <div class="centerFieldset">
+      <div class="canvas_div_pdf">
+        <fieldset class="formatedInfos">
+          <legend>Formated Info</legend>
+          <h1>Personal Info</h1>
+          <p>
+            <strong>Nome: </strong>
+            <label id="formatedName"></label>
+          </p>
+          <p>
+            <strong>Headline: </strong>
+            <label id="formatedHeadline"></label>
+          </p>
+          <p>
+            <strong>Personal Description: </strong>
+            <label id="formatedPersonalDescription"></label>
+          </p>
+          <p>
+            <strong>E-mail: </strong>
+            <label id="formatedEmail"></label>
+          </p>
+          <p>
+            <strong>Phone Number: </strong>
+            <label id="formatedPhoneNumber"></label>
+          </p>
+          <p>
+            <strong>Location: </strong>
+            <label id="formatedLocation"></label>
+          </p>
+          <p>
+            <strong>Personal Website: </strong>
+            <label id="formatedWebsite"></label>
+          </p>
+          <p>
+            <strong>Linkedin Profile: </strong>
+            <label id="formatedLinkedinProfile"></label>
+          </p>
+
+          <h1>Expertise Area</h1>
+          <p>
+            <strong>Areas: </strong>
+            <label id="formatedExpertiseArea"></label>
+          </p>
+        </fieldset>
       </div>
     </div>
+  </div>
 
-
-
-    <!-- FOOTER WILL BECOME A BURGER MENU
-    <footer>
-      <div id="footer" class="footer">
-        <span>Created by Pedro Fagundes</span>
-        <a href="https://www.linkedin.com/in/pedrofagundes/" target="blank">LinkedIn</a>
-        <a href="https://github.com/PedroheFagundes" target="blank">Github</a>
-      </div>
-    </footer>
-    -->
-  </main>
+  <!-- FOOTER WILL BECOME A BURGER MENU
+  <footer>
+    <div id="footer" class="footer">
+      <span>Created by Pedro Fagundes</span>
+      <a href="https://www.linkedin.com/in/pedrofagundes/" target="blank">LinkedIn</a>
+      <a href="https://github.com/PedroheFagundes" target="blank">Github</a>
+    </div>
+  </footer>
+  -->
 
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.3/jspdf.min.js"></script>
   <script src="https://html2canvas.hertzen.com/dist/html2canvas.js"></script>
-  <script src="js/home-main.js"></script>
+  <script src="js/home.js"></script>
   <script src="js/sections.js"></script>
   <script src="js/formatedCurriculum.js"></script>
+  <script src="js/review.js"></script>
 </body>
 </html>

@@ -1,5 +1,17 @@
 // Functions
 
+function showSections() {
+  hideHomeScreen();
+  document.getElementById('progressNumber-total').innerHTML = document.getElementById('sections').children.length;
+  document.getElementById('main').setAttribute("class", "showOn");
+  progressBarUpdate();
+}
+
+function hideSections() {
+  document.getElementById('main').setAttribute("class", "showOff");
+  inputCounter = 0;
+}
+
 function hideInputs() {
   for( let i = 0; i < document.getElementById('sections').children.length; i++) {
     document.getElementById('sections').children[i].setAttribute("class", "showOff");
@@ -121,13 +133,12 @@ function selectInput() {
   progressBarUpdate();
 }
 
-
 function nextInput() {
   hideInputs();
   inputCounter++;
   if (document.getElementById('nextButton').innerHTML == "Review") {
     document.getElementById('nextButton').innerHTML = "Next";
-    showHomeScreen();
+    showReview();
   }
   selectInput();
 }
