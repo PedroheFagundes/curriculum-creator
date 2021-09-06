@@ -9,12 +9,12 @@ div .disabled {
 input {
   display: block;
   width: 100%;
-  padding-top: 37px;
+  padding-top: 53px;
   border: none;
   border-radius: 0;
   color: var(--light);
   background: var(--dark);
-  font-size: 37px;
+  font-size: 20px;
   transition: 0.3s ease;
 }
 input:valid ~ label {

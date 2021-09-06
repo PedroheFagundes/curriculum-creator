@@ -72,6 +72,49 @@ function selectInput() {
     case 11:
       document.getElementById('workExperience-periodFinish').setAttribute("class", "showOn");
       break;
+
+    case 12:
+      document.getElementById('workExperience-location').setAttribute("class", "showOn");
+      document.getElementById('nextButton').innerHTML = "Next";
+      break;
+
+    case 13:
+      document.getElementById('workExperience-award').setAttribute("class", "showOn");
+      document.getElementById('sectionName').innerHTML = "WORK EXPERIENCE";
+      document.getElementById('nextButton').innerHTML = "Next Section";
+      break;
+
+    case 14:
+      document.getElementById('education-title').setAttribute("class", "showOn");
+      document.getElementById('sectionName').innerHTML = "EDUCATION";
+      document.getElementById('nextButton').innerHTML = "Next";
+      break;
+
+    case 15:
+      document.getElementById('education-institution').setAttribute("class", "showOn");
+      break;
+
+    case 16:
+      document.getElementById('education-periodStart').setAttribute("class", "showOn");
+      document.getElementById('nextButton').innerHTML = "Next";
+      break;
+
+    case 17:
+      document.getElementById('education-periodFinish').setAttribute("class", "showOn");
+      document.getElementById('sectionName').innerHTML = "EDUCATION";
+      document.getElementById('nextButton').innerHTML = "Next Section";
+      break;
+
+    case 18:
+      document.getElementById('language-name').setAttribute("class", "showOn");
+      document.getElementById('sectionName').innerHTML = "LANGUAGE";
+      document.getElementById('nextButton').innerHTML = "Next";
+      break;
+
+    case 19:
+      document.getElementById('language-proeficiency').setAttribute("class", "showOn");
+      document.getElementById('nextButton').innerHTML = "Review";
+      break;
   }
 
   document.getElementById('progressNumber-current').innerHTML = inputCounter + 1;
@@ -82,6 +125,10 @@ function selectInput() {
 function nextInput() {
   hideInputs();
   inputCounter++;
+  if (document.getElementById('nextButton').innerHTML == "Review") {
+    document.getElementById('nextButton').innerHTML = "Next";
+    showHomeScreen();
+  }
   selectInput();
 }
 
