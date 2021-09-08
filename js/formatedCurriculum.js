@@ -32,23 +32,23 @@ function saveToPDF() {
 }
 
 function showCurriculum() {
-  document.getElementById('formatedCurriculum').setAttribute("class", "showOn");
+  document.querySelector('#formatedCurriculum').setAttribute("class", "showOn");
   setPersonalInfo();
   setExpertiseArea();
 }
 
 function setPersonalInfo() {
-  document.getElementById('formatedName').innerHTML = document.getElementById('name').value;
-  document.getElementById('formatedHeadline').innerHTML = document.getElementById('headline').value;
-  document.getElementById('formatedPersonalDescription').innerHTML = document.getElementById('personalDescription').value;
-  document.getElementById('formatedEmail').innerHTML = document.getElementById('email').value;
-  document.getElementById('formatedPhoneNumber').innerHTML = document.getElementById('phoneNumber').value;
-  document.getElementById('formatedLocation').innerHTML = document.getElementById('location').value;
-  document.getElementById('formatedWebsite').innerHTML = document.getElementById('website').value;
-  document.getElementById('formatedLinkedinProfile').innerHTML = document.getElementById('linkedinProfile').value;
+  document.querySelector('#formatedName').innerHTML = document.querySelector('#name').value;
+  document.querySelector('#formatedHeadline').innerHTML = document.querySelector('#headline').value;
+  document.querySelector('#formatedPersonalDescription').innerHTML = document.querySelector('#personalDescription').value;
+  document.querySelector('#formatedEmail').innerHTML = document.querySelector('#email').value;
+  document.querySelector('#formatedPhoneNumber').innerHTML = document.querySelector('#phoneNumber').value;
+  document.querySelector('#formatedLocation').innerHTML = document.querySelector('#location').value;
+  document.querySelector('#formatedWebsite').innerHTML = document.querySelector('#website').value;
+  document.querySelector('#formatedLinkedinProfile').innerHTML = document.querySelector('#linkedinProfile').value;
 }
 
 function setExpertiseArea() {
-  let expertiseArray = document.getElementById('expertiseAreaString').value.split(',');
-  document.getElementById('formatedExpertiseArea').innerHTML = expertiseArray;
+  let expertiseArray = document.querySelector('#expertiseAreaString').value.split(',');
+  document.querySelector('#formatedExpertiseArea').innerHTML = expertiseArray;
 }
