@@ -42,9 +42,6 @@ header a {
   padding-bottom: 40px;
 }
 
-main {
-  height: 100vh;
-}
 
 /* Classes */
 
@@ -102,6 +99,14 @@ main {
 .menu img {
   width: 250px;
   height: 11.14px;
+}
+
+.showOff {
+  display: none;
+}
+
+.showOn {
+  display: flex;
 }
 
 

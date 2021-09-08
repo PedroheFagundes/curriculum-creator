@@ -1,11 +1,5 @@
 /* Tags */
 
-div .disabled {
-  pointer-events: none;
-
-  opacity: 0.5;
-}
-
 input {
   display: block;
   width: 100%;
@@ -38,17 +32,9 @@ input:-webkit-autofill {
   -webkit-text-fill-color: var(--light) !important;
 }
 
-.group label {
-  position: absolute;
-  top: 37px;
-  color: var(--light);
-  font: 400 37px Roboto;
-  cursor: text;
-  transition: 0.25s ease;
-}
-
 main {
   display: flex;
+  height: 100vh;
   flex-direction: column;
   justify-content: space-between;
 }
@@ -56,6 +42,10 @@ main {
 /* IDs */
 
 #nextButton {
+  color: var(--primary);
+}
+
+#sectionName {
   color: var(--primary);
 }
 
@@ -87,13 +77,12 @@ main {
   right: 0;
 }
 
-.column {
+.buttonColumn {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
   padding: 100px 0px;
-
 }
 
 .group {
@@ -103,23 +92,13 @@ main {
   position: relative;
 }
 
-.sectionsButtons {
-  font-size: 20px;
-  width: var(--sections-width);
-  display: flex;
-  justify-content: space-between;
-}
-
-.showOff {
-  display: none;
-}
-
-.showOn {
-  display: flex;
-}
-
-::selection {
-  background: rgba(var(--primary), 0.3);
+.group label {
+  position: absolute;
+  top: 37px;
+  color: var(--light);
+  font: 400 37px Roboto;
+  cursor: text;
+  transition: 0.25s ease;
 }
 
 .progressBar {
@@ -141,16 +120,21 @@ main {
   text-align: right;
   padding-bottom: 25px;
   padding-top: 40px;
-
 }
 
+.sectionsButtons {
+  font-size: 20px;
+  width: var(--sections-width);
+  display: flex;
+  justify-content: space-between;
+}
+
+::selection {
+  background: rgba(var(--primary), 0.3);
+}
 .topSectionsScreen {
   display: flex;
   flex-direction: column;
   align-items: center;
   font-size: 20px;
-}
-
-#sectionName {
-  color: var(--primary);
 }

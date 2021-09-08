@@ -37,7 +37,8 @@
         </div>
       </div>
       <div class="homeText">
-        <p class="homeTextLeft"><strong>Create</strong> a curriculum<br>in 10 minutes and spread it<br>to whole <strong>world</strong>.</p>
+        <p class="homeTextLeft"><strong>Create</strong> a curriculum<br>in 10 minutes and spread it<br>to whole
+          <strong>world</strong>.</p>
         <p class="homeTextRight">Your next job is<br>awaiting <strong>you</strong>!</p>
       </div>
     </div>
@@ -46,6 +47,10 @@
     <a onclick="showSections()">
       <p class="startCurriculum">START MY CURRICULUM</p>
     </a>
+    <!-- Atalho para review 
+    <a onclick="showReview()">
+      <p class="startCurriculum">REVIEW</p>
+    </a>-->
   </header>
 
   <!-- Main Sections -->
@@ -281,21 +286,71 @@
       </div>
 
       <!-- Sections buttons Next and Previous  -->
-      <div class="column">
+      <div class="buttonColumn">
         <div class="sectionsButtons">
           <div id="previousButton" onclick="previousInput()">
             <label id="previousButtonText">Home</label>
           </div>
           <div id="nextButton" onclick="nextInput()">Next</div>
         </div>
-        <button id="formatedCurriculumButton" class="showOff" onclick="showCurriculum()">Confirm Curriculum Infos</button>
       </div>
     </div>
   </main>
 
+
+
+
+
+
   <!-- Review Screen -->
-  <div id="review" class="showOff">
-    <h1>Review Screen</h1>
+  <div id="reviewScreen" class="showOff">
+    <!-- Top half of screen -->
+    <div class="topReviewScreen">
+      <div>REVIEW</div>
+      <div id="reviewName">PERSONAL INFO</div>
+    </div>
+
+    <!-- Center Review Screen -->
+    <div class="centerReviewScreen">
+      <div id="review">
+        
+        <!-- Personal Info Review -->
+        <div id="personalInfoReview" class="showOn">
+          <div class="column">
+            <div class="lineReview">Name: <span>Pedro Henrique</span></div>
+            <div class="lineReview">Headline: <span>Web Developer</span></div>
+            <div class="lineReview">Description: <span>Web Developer</span></div>
+            <div class="lineReview">E-mail: <span>Pedro Henrique</span></div>
+            <div class="lineReview">Phone Number: <span>Web Developer</span></div>
+            <div class="lineReview">Location: <span>Pedro Henrique</span></div>
+            <div class="lineReview">Linkedin: <span>WebDe veloperdf gdfyu yuxcvxcvsdf sfdfs sfdwer</span></div>
+          </div>
+        </div>
+
+        <!-- Personal Info Review -->
+        <div id="skillReview" class="showOff">
+          <div class="column">
+            <div class="lineReview">aaa: <span>Pedro Henrique</span></div>
+            <div class="lineReview">aaa: <span>Web Developer</span></div>
+            <div class="lineReview">Deaaascription: <span>Web Developer</span></div>
+            <div class="lineReview">E-mail: <span>Pedro Henrique</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Review Screen -->
+    <div class="bottomReviewScreen">
+      <!-- Review buttons Next and Previous -->
+      <div class="buttonColumn">
+        <div class="reviewButtons">
+          <div id="reviewPreviousButton" onclick="previousReview()">
+            <label id="reviewPreviousButtonText"></label>
+          </div>
+          <div id="reviewNextButton" onclick="nextReview()">Next</div>
+        </div>
+      </div>
+    </div>
   </div>
 
   <!-- Formated Curriculum to download -->
@@ -366,4 +421,5 @@
   <script src="js/formatedCurriculum.js"></script>
   <script src="js/review.js"></script>
 </body>
+
 </html>
