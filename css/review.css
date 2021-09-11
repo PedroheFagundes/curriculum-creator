@@ -39,11 +39,27 @@
   justify-content: space-between;
 }
 
+.award {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+}
+
+.award span {
+  margin-bottom: 10px;
+}
+
 .reviewButtons {
   font-size: 20px;
   width: var(--sections-width);
   display: flex;
   justify-content: space-between;
+}
+
+.rowBreak {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .showOnReview {

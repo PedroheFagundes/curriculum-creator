@@ -26,11 +26,18 @@ function selectReview() {
     case 0:
       document.querySelector('#personalInfoReview').setAttribute("class", "showOnReview");
       document.querySelector('#reviewPreviousButtonText').innerHTML = "";
+      document.querySelector('#reviewName').innerHTML = "PERSONAL INFO";
       break;
 
     case 1:
       document.querySelector('#skillReview').setAttribute("class", "showOnReview");
       document.querySelector('#reviewPreviousButtonText').innerHTML = "Previous";
+      document.querySelector('#reviewName').innerHTML = "SKILLS";
+      break;
+
+    case 2:
+      document.querySelector('#workExperienceReview').setAttribute("class", "showOnReview");
+      document.querySelector('#reviewName').innerHTML = "WORK EXPERIENCE";
       break;
   }
 }
