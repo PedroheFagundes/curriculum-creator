@@ -47,10 +47,10 @@
     <a onclick="showSections()">
       <p class="startCurriculum">START MY CURRICULUM</p>
     </a>
-    <!-- Atalho para review -->
+    <!-- Atalho para review 
     <a onclick="showReview()">
       <p class="startCurriculum">REVIEW</p>
-    </a>
+    </a> -->
   </header>
 
   <!-- Main Sections -->
@@ -297,11 +297,6 @@
     </div>
   </main>
 
-
-
-
-
-
   <!-- Review Screen -->
   <div id="reviewScreen" class="showOff">
     <!-- Top half of screen -->
@@ -327,7 +322,7 @@
           </div>
         </div>
 
-        <!-- Personal Info Review -->
+        <!-- Skills Review -->
         <div id="skillReview" class="showOff">
           <div class="column rowBreak">
             <div class="lineReview"><span>Public Speech</span></div>
@@ -350,6 +345,23 @@
             </div>
           </div>
         </div>
+
+        <!-- Education Review -->
+        <div id="educationReview" class="showOff">
+          <div class="column">
+            <div class="lineReview">Formation: <span>MSc in Economics</span></div>
+            <div class="lineReview">Institution: <span>Miskatonic University</span></div>
+            <div class="lineReview">Period: <span>09/2021 - Present</span></div>
+          </div>
+        </div>
+
+        <!-- Languages Review -->
+        <div id="languageReview" class="showOff">
+          <div class="column">
+            <div class="lineReview"><span>English</span> <span>Conversational</span></div>
+            <div class="lineReview"><span>Portuguese</span> <span>Fluent/Native</span></div>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -361,7 +373,9 @@
           <div id="reviewPreviousButton" onclick="previousReview()">
             <label id="reviewPreviousButtonText"></label>
           </div>
-          <div id="reviewNextButton" onclick="nextReview()">Next</div>
+          <div id="reviewNextButton" onclick="nextReview()">
+            <label id="reviewNextButtonText">Next</label>
+          </div>
         </div>
       </div>
     </div>

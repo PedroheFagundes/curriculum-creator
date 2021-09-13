@@ -33,8 +33,6 @@ function saveToPDF() {
 
 function showCurriculum() {
   document.querySelector('#formatedCurriculum').setAttribute("class", "showOn");
-  setPersonalInfo();
-  setExpertiseArea();
 }
 
 function setPersonalInfo() {

@@ -20,6 +20,11 @@
   padding: 20px;
 }
 
+#reviewNextButtonText {
+  display: flex;
+  text-align: end;
+}
+
 /* Classes */
 
 .centerReviewScreen {
@@ -53,6 +58,7 @@
   width: var(--sections-width);
   display: flex;
   justify-content: space-between;
+  align-items: end;
 }
 
 .rowBreak {

@@ -39,14 +39,27 @@ function selectReview() {
       document.querySelector('#workExperienceReview').setAttribute("class", "showOnReview");
       document.querySelector('#reviewName').innerHTML = "WORK EXPERIENCE";
       break;
+
+    case 3:
+      document.querySelector('#educationReview').setAttribute("class", "showOnReview");
+      document.querySelector('#reviewName').innerHTML = "EDUCATION";
+      document.querySelector('#reviewNextButtonText').innerHTML = "Next";
+      break;
+
+    case 4:
+      document.querySelector('#languageReview').setAttribute("class", "showOnReview");
+      document.querySelector('#reviewName').innerHTML = "LANGUAGES";
+      document.querySelector('#reviewNextButtonText').innerHTML = "Download <br> Curriculum";
+      break;
   }
 }
 
 function nextReview() {
   hideReviewSections();
   reviewSectionCounter++;
-  if (document.querySelector('#reviewNextButton').innerHTML == "Download Curriculum") {
+  if (document.querySelector('#reviewNextButtonText').innerHTML == "Download <br> Curriculum") {
     document.querySelector('#reviewNextButton').innerHTML = "Next";
+    showCurriculum()
     saveToPDF();
   }
   selectReview();
