@@ -48,10 +48,10 @@
     <a onclick="showSections()">
       <p class="startCurriculum">START MY CURRICULUM</p>
     </a>
-    <!-- Atalho para review 
-    <a onclick="showReview()">
-      <p class="startCurriculum">REVIEW</p>
-    </a>--> 
+    <!-- Atalho para Congrat --> 
+    <a onclick="showCongrat()">
+      <p class="startCurriculum">Congrats</p>
+    </a>
   </header>
 
   <!-- Main Sections -->
@@ -385,6 +385,27 @@
   <!-- Congrat Screen -->
   <section id="congratScreen" class="showOff">
     <span>Your Curriculum was downloaded.</span>
+    <span class="congratMessage"><strong>CONGRATULATIONS, <br>
+      PEDRO! </strong> <br>
+      You are one step closer <br>
+      to realizing your <br>
+      professional dream!
+    </span>
+
+    <!-- Bottom Congrat Screen -->
+    <div class="bottomCongratScreen">
+      <!-- Congrat buttons Next and Previous -->
+      <div class="buttonColumn congratButtonsColumn">
+        <div class="congratButtons">
+          <div id="reviewPreviousButton" onclick="showHomeScreen()">
+            <label id="reviewPreviousButtonText">Home</label>
+          </div>
+          <div id="reviewNextButton" onclick="">
+            <label id="reviewNextButtonText">Share</label>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
 
@@ -392,48 +413,10 @@
   <section id="formatedCurriculum" class="showOff">
     <div class="centerFieldset">
       <div class="canvas_div_pdf">
-        <fieldset class="formatedInfos">
-          <legend>Formated Info</legend>
-          <h1>Personal Info</h1>
-          <p>
-            <strong>Nome: </strong>
-            <label id="formatedName"></label>
-          </p>
-          <p>
-            <strong>Headline: </strong>
-            <label id="formatedHeadline"></label>
-          </p>
-          <p>
-            <strong>Personal Description: </strong>
-            <label id="formatedPersonalDescription"></label>
-          </p>
-          <p>
-            <strong>E-mail: </strong>
-            <label id="formatedEmail"></label>
-          </p>
-          <p>
-            <strong>Phone Number: </strong>
-            <label id="formatedPhoneNumber"></label>
-          </p>
-          <p>
-            <strong>Location: </strong>
-            <label id="formatedLocation"></label>
-          </p>
-          <p>
-            <strong>Personal Website: </strong>
-            <label id="formatedWebsite"></label>
-          </p>
-          <p>
-            <strong>Linkedin Profile: </strong>
-            <label id="formatedLinkedinProfile"></label>
-          </p>
-
-          <h1>Expertise Area</h1>
-          <p>
-            <strong>Areas: </strong>
-            <label id="formatedExpertiseArea"></label>
-          </p>
-        </fieldset>
+        <div class="container">
+          <h1>teste cima</h1>
+          <h1>teste baixo</h1>
+        </div>
       </div>
     </div>
   </section>

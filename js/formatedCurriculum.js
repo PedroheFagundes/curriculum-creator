@@ -27,7 +27,7 @@ function saveToPDF() {
       pdf.addImage(imgData, 'JPG', top_left_margin, -(PDF_Height*i)+(top_left_margin*4),canvas_image_width,canvas_image_height);
     }
     
-      pdf.save("Dados-Formatados.pdf");
+      pdf.save("Person Name.pdf");
       });
 }
 

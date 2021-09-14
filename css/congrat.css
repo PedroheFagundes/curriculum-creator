@@ -1,0 +1,37 @@
+/* IDs */
+
+#congratScreen {
+  height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#congratScreen span {
+  padding-top: 100px;
+  text-align: center;
+}
+
+/* Classes */
+
+.bottomCongratScreen{
+  width: var(--sections-width);
+}
+
+.congratButtons {
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.congratButtonsColumn {
+  display: block;
+}
+
+.congratMessage {
+  font-size: 22px;
+}
+
+.congratMessage strong {
+  color: var(--primary);
+}
