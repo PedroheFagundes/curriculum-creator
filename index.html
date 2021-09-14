@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="./css/formatedCurriculum.css">
   <link rel="stylesheet" href="./css/footer.css">
   <link rel="stylesheet" href="./css/review.css">
+  <link rel="stylesheet" href="./css/congrat.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Share+Tech&display=swap" rel="stylesheet">
@@ -39,7 +40,7 @@
       <div class="homeText">
         <p class="homeTextLeft"><strong>Create</strong> a curriculum<br>in 10 minutes and spread it<br>to whole
           <strong>world</strong>.</p>
-        <p class="homeTextRight">Your next job is<br>awaiting <strong>you</strong>!</p>
+        <p class="homeTextRight">The realization <br> of your professional <br> <strong>dream</strong> starts here!</p>
       </div>
     </div>
     <div class="tilt"></div>
@@ -47,10 +48,10 @@
     <a onclick="showSections()">
       <p class="startCurriculum">START MY CURRICULUM</p>
     </a>
-    <!-- Atalho para review 
+    <!-- Atalho para review --> 
     <a onclick="showReview()">
       <p class="startCurriculum">REVIEW</p>
-    </a> -->
+    </a>
   </header>
 
   <!-- Main Sections -->
@@ -298,7 +299,7 @@
   </main>
 
   <!-- Review Screen -->
-  <div id="reviewScreen" class="showOff">
+  <section id="reviewScreen" class="showOff">
     <!-- Top half of screen -->
     <div class="topReviewScreen">
       <div>REVIEW</div>
@@ -379,10 +380,16 @@
         </div>
       </div>
     </div>
-  </div>
+  </section>
+
+  <!-- Congrat Screen -->
+  <section id="congratScreen" class="showOff">
+    <span>Your Curriculum was downloaded.</span>
+  </section>
+
 
   <!-- Formated Curriculum to download -->
-  <div id="formatedCurriculum" class="showOff">
+  <section id="formatedCurriculum" class="showOff">
     <div class="centerFieldset">
       <div class="canvas_div_pdf">
         <fieldset class="formatedInfos">
@@ -429,7 +436,7 @@
         </fieldset>
       </div>
     </div>
-  </div>
+  </section>
 
   <!-- FOOTER WILL BECOME A BURGER MENU
   <footer>
@@ -448,6 +455,7 @@
   <script src="js/sections.js"></script>
   <script src="js/formatedCurriculum.js"></script>
   <script src="js/review.js"></script>
+  <script src="js/congrat.js"></script>
 </body>
 
 </html>

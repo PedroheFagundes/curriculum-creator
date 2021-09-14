@@ -35,6 +35,10 @@ function showCurriculum() {
   document.querySelector('#formatedCurriculum').setAttribute("class", "showOn");
 }
 
+function hideCurriculum() {
+  document.querySelector('#formatedCurriculum').setAttribute("class", "showOff");
+}
+
 function setPersonalInfo() {
   document.querySelector('#formatedName').innerHTML = document.querySelector('#name').value;
   document.querySelector('#formatedHeadline').innerHTML = document.querySelector('#headline').value;

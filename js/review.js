@@ -7,6 +7,8 @@ let reviewSectionCounter = 0;
 function showReview () {
   hideHomeScreen();
   hideSections();
+  hideCurriculum();
+  hideCongrat();
   document.querySelector('#reviewScreen').setAttribute("class", "showOn");
 }
 
@@ -59,8 +61,9 @@ function nextReview() {
   reviewSectionCounter++;
   if (document.querySelector('#reviewNextButtonText').innerHTML == "Download <br> Curriculum") {
     document.querySelector('#reviewNextButton').innerHTML = "Next";
-    showCurriculum()
+    showCurriculum();
     saveToPDF();
+    showCongrat();
   }
   selectReview();
 }

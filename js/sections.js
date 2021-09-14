@@ -2,6 +2,9 @@
 
 function showSections() {
   hideHomeScreen();
+  hideReview();
+  hideCurriculum();
+  hideCongrat();
   document.querySelector('#progressNumber-total').innerHTML = document.querySelector('#sections').children.length;
   document.querySelector('#main').setAttribute("class", "showOn");
   progressBarUpdate();
