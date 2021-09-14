@@ -10,6 +10,7 @@ function showHomeScreen () {
   hideReview();
   hideCurriculum();
   hideCongrat();
+  hideShare()
 }
 
 function hideHomeScreen () {

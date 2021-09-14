@@ -5,6 +5,7 @@ function showCongrat() {
   hideSections();
   hideReview();
   hideCurriculum();
+  hideShare();
   document.querySelector('#congratScreen').setAttribute("class", "showOn");
 }
 

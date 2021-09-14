@@ -5,6 +5,7 @@ function showSections() {
   hideReview();
   hideCurriculum();
   hideCongrat();
+  hideShare();
   document.querySelector('#progressNumber-total').innerHTML = document.querySelector('#sections').children.length;
   document.querySelector('#main').setAttribute("class", "showOn");
   progressBarUpdate();

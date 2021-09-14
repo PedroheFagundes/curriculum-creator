@@ -9,6 +9,7 @@ function showReview () {
   hideSections();
   hideCurriculum();
   hideCongrat();
+  hideShare();
   document.querySelector('#reviewScreen').setAttribute("class", "showOn");
 }
 
