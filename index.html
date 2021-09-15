@@ -49,10 +49,10 @@
     <a onclick="showSections()">
       <p class="startCurriculum">START MY CURRICULUM</p>
     </a>
-    <!-- Atalho para Congrat --> 
+    <!-- Atalho para Congrat 
     <a onclick="showCongrat()">
       <p class="startCurriculum">Congrats</p>
-    </a>
+    </a> --> 
   </header>
 
   <!-- Main Sections -->
@@ -149,11 +149,10 @@
         </div>
 
         <!-- Skills Section -->
-
         <div id="skillSection" class="showOff">
           <div class="centered">
             <div class="group">
-              <input type="text" id="skill" required>
+              <input type="text" id="skills" required>
               <label for="skill">Skills</label>
               <div class="bar"></div>
             </div>
@@ -161,7 +160,6 @@
         </div>
 
         <!-- Work Experience Section -->
-
         <div id="workExperience-title" class="showOff">
           <div class="centered">
             <div class="group">
@@ -223,7 +221,6 @@
         </div>
 
         <!-- Education Section -->
-
         <div id="education-title" class="showOff">
           <div class="centered">
             <div class="group">
@@ -314,13 +311,13 @@
         <!-- Personal Info Review -->
         <div id="personalInfoReview" class="showOnReview">
           <div class="column">
-            <div class="lineReview">Name: <span>Pedro Henrique</span></div>
-            <div class="lineReview">Headline: <span>Web Developer</span></div>
-            <div class="lineReview">Description: <span>Web Developer</span></div>
-            <div class="lineReview">E-mail: <span>Pedro Henrique</span></div>
-            <div class="lineReview">Phone Number: <span>Web Developer</span></div>
-            <div class="lineReview">Location: <span>Pedro Henrique</span></div>
-            <div class="lineReview">Linkedin: <span>WebDe fdfs sfdwer</span></div>
+            <div class="lineReview formatedName">Name: <span>Pedro Henrique</span></div>
+            <div class="lineReview formatedHeadline">Headline: <span>Web Developer</span></div>
+            <div class="lineReview formatedPersonalDescription">Description: <span>Web Developer</span></div>
+            <div class="lineReview formatedEmail">E-mail: <span>Pedro Henrique</span></div>
+            <div class="lineReview formatedPhoneNumber">Phone Number: <span>Web Developer</span></div>
+            <div class="lineReview formatedLocation">Location: <span>Pedro Henrique</span></div>
+            <div class="lineReview formatedLinkedinProfile">Linkedin: <span>WebDe fdfs sfdwer</span></div>
           </div>
         </div>
 
@@ -414,8 +411,15 @@
     <div class="centerFieldset">
       <div class="canvas_div_pdf">
         <div class="container">
-          <h1>teste cima</h1>
-          <h1>teste baixo</h1>
+          <div class="setPersonalInfo">
+            <div class="formatedName"></div>
+            <div class="formatedHeadline"></div>
+            <div class="formatedPersonalDescription"></div>
+            <div class="formatedEmail"></div>
+            <div class="formatedPhoneNumber"></div>
+            <div class="formatedLocation"></div>
+            <div class="formatedLinkedinProfile"></div>
+          </div>
         </div>
       </div>
     </div>
@@ -424,7 +428,7 @@
   <!-- Share Screen -->
   <section id="shareScreen" class="showOff">
 
-    <h1>Share now your <br> new curriculum!</h1>
+    <h1>Share <span> Curriculum Creator </span> <br> with your friends!</h1>
 
     <div class="sharingButtons">
       <!-- Sharingbutton Facebook -->

@@ -62,9 +62,7 @@ function nextReview() {
   reviewSectionCounter++;
   if (document.querySelector('#reviewNextButtonText').innerHTML == "Download <br> Curriculum") {
     document.querySelector('#reviewNextButton').innerHTML = "Next";
-    showCurriculum();
-    saveToPDF();
-    showCongrat();
+    downloadCurriculum();
   }
   selectReview();
 }
@@ -76,5 +74,33 @@ function previousReview() {
     showHomeScreen();
   }
   selectReview();
+}
+
+function getUserInfo() {
+  getPersonalInfo();
+  getSkills();
+}
+
+function getPersonalInfo() {
+  var formatedName = document.querySelector('#name').value;
+  var formatedHeadline = document.querySelector('#headline').value;
+  var formatedPersonalDescription = document.querySelector('#description').value;
+  var formatedEmail = document.querySelector('#email').value;
+  var formatedPhoneNumber = document.querySelector('#phone').value;
+  var formatedLocation = document.querySelector('#location').value;
+  var formatedLinkedinProfile = document.querySelector('#linkedin').value;
+}
+
+function getSkills() {
+  let skillsArray = document.querySelector('#skills').value.split(',');
+}
+
+function getWorkExperience() {
+  var formatedTitle = document.querySelector('#title').value;
+  var formatedCompany = document.querySelector('#company').value;
+  var formatedWorkExpPeriodStart = document.querySelector('#periodStart').value;
+  var formatedWorkExpPeriodFinish = document.querySelector('#periodFinish').value;
+  var formatedCompanyLocation = document.querySelector('#companyLocation').value;
+  var formatedAward = document.querySelector('#award').value;
 }
 

@@ -7,6 +7,14 @@
   align-items: center;
 }
 
+#shareScreen h1 {
+  text-align: center;
+}
+
+#shareScreen span {
+  color: var(--primary);
+}
+
 /* Classes */
 
 .resp-sharing-button__link,
