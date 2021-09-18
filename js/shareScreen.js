@@ -1,11 +1,7 @@
 // Functions
 
 function showShare() {
-  hideHomeScreen();
-  hideSections();
-  hideReview();
-  hideCurriculum();
-  hideCongrat();
+  hideAllScreens();
   document.querySelector('#shareScreen').setAttribute("class", "showOn");
 }
 

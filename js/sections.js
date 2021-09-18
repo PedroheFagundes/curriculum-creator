@@ -1,11 +1,7 @@
 // Functions
 
 function showSections() {
-  hideHomeScreen();
-  hideReview();
-  hideCurriculum();
-  hideCongrat();
-  hideShare();
+  hideAllScreens();
   document.querySelector('#progressNumber-total').innerHTML = document.querySelector('#sections').children.length;
   document.querySelector('#main').setAttribute("class", "showOn");
   progressBarUpdate();
@@ -140,6 +136,8 @@ function selectInput() {
 function nextInput() {
   hideInputs();
   inputCounter++;
+  getUserInfo();
+  setUserInfo();
   if (document.querySelector('#nextButton').innerHTML == "Review") {
     document.querySelector('#nextButton').innerHTML = "Next";
     showReview();

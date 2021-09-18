@@ -49,10 +49,10 @@
     <a onclick="showSections()">
       <p class="startCurriculum">START MY CURRICULUM</p>
     </a>
-    <!-- Atalho para Congrat 
-    <a onclick="showCongrat()">
-      <p class="startCurriculum">Congrats</p>
-    </a> --> 
+    <!-- Atalho para formatedCurriculum --> 
+    <a onclick="downloadCurriculum()">
+      <p class="startCurriculum">Curriculum</p>
+    </a> 
   </header>
 
   <!-- Main Sections -->
@@ -311,36 +311,31 @@
         <!-- Personal Info Review -->
         <div id="personalInfoReview" class="showOnReview">
           <div class="column">
-            <div class="lineReview formatedName">Name: <span>Pedro Henrique</span></div>
-            <div class="lineReview formatedHeadline">Headline: <span>Web Developer</span></div>
-            <div class="lineReview formatedPersonalDescription">Description: <span>Web Developer</span></div>
-            <div class="lineReview formatedEmail">E-mail: <span>Pedro Henrique</span></div>
-            <div class="lineReview formatedPhoneNumber">Phone Number: <span>Web Developer</span></div>
-            <div class="lineReview formatedLocation">Location: <span>Pedro Henrique</span></div>
-            <div class="lineReview formatedLinkedinProfile">Linkedin: <span>WebDe fdfs sfdwer</span></div>
+            <div class="lineReview formatedName">Name: <span></span></div>
+            <div class="lineReview formatedHeadline">Headline: <span></span></div>
+            <div class="lineReview formatedPersonalDescription">Description: <span></span></div>
+            <div class="lineReview formatedEmail">E-mail: <span></span></div>
+            <div class="lineReview formatedPhoneNumber">Phone Number: <span></span></div>
+            <div class="lineReview formatedLocation">Location: <span></span></div>
+            <div class="lineReview formatedLinkedinProfile">Linkedin: <span></span></div>
           </div>
         </div>
 
         <!-- Skills Review -->
         <div id="skillReview" class="showOff">
           <div class="column rowBreak">
-            <div class="lineReview"><span>Public Speech</span></div>
-            <div class="lineReview"><span>Self Managment</span></div>
-            <div class="lineReview"><span>Programming</span></div>
-            <div class="lineReview"><span>Self Managment</span></div>
+            <div class="lineReview formatedSkill"><span></span></div>
           </div>
         </div>
 
         <!-- Work Experience Review -->
         <div id="workExperienceReview" class="showOff">
           <div class="column">
-            <div class="lineReview">Title: <span>Junior Web Developer</span></div>
-            <div class="lineReview">Company: <span>Pluma Tech Inc</span></div>
-            <div class="lineReview">Period: <span>09/2021 - Present</span></div>
-            <div class="lineReview">Location: <span>Rio de Janeiro, Brasil</span></div>
-            <div class="lineReview award">
-              Awards: <span>Created the awarded login system</span><br>
-                      <span>Solved a bug that stopped the project</span>
+            <div class="lineReview formatedTitle">Title: <span></span></div>
+            <div class="lineReview formatedCompany">Company: <span></span></div>
+            <div class="lineReview formatedWorkExpPeriod">Period: <span></span></div>
+            <div class="lineReview formatedCompanyLocation">Location: <span></span></div>
+            <div class="lineReview formatedAward">Awards: <span></span>
             </div>
           </div>
         </div>
@@ -348,17 +343,16 @@
         <!-- Education Review -->
         <div id="educationReview" class="showOff">
           <div class="column">
-            <div class="lineReview">Formation: <span>MSc in Economics</span></div>
-            <div class="lineReview">Institution: <span>Miskatonic University</span></div>
-            <div class="lineReview">Period: <span>09/2021 - Present</span></div>
+            <div class="lineReview formatedEducationTitle">Formation: <span></span></div>
+            <div class="lineReview formatedEducationInstitution">Institution: <span></span></div>
+            <div class="lineReview formatedEducationPeriod">Period: <span></span></div>
           </div>
         </div>
 
         <!-- Languages Review -->
         <div id="languageReview" class="showOff">
           <div class="column">
-            <div class="lineReview"><span>English</span> <span>Conversational</span></div>
-            <div class="lineReview"><span>Portuguese</span> <span>Fluent/Native</span></div>
+            <div class="lineReview formatedLanguage"><span>English</span> <span>Conversational</span></div>
           </div>
         </div>
       </div>
@@ -408,19 +402,50 @@
 
   <!-- Formated Curriculum to download -->
   <section id="formatedCurriculum" class="showOff">
-    <div class="centerFieldset">
       <div class="canvas_div_pdf">
-        <div class="container">
-          <div class="setPersonalInfo">
-            <div class="formatedName"></div>
-            <div class="formatedHeadline"></div>
-            <div class="formatedPersonalDescription"></div>
-            <div class="formatedEmail"></div>
-            <div class="formatedPhoneNumber"></div>
-            <div class="formatedLocation"></div>
-            <div class="formatedLinkedinProfile"></div>
+      <div class="container">
+        <div class="formatedName"><span>Pedro Henrique Eller Fagundes</span></div>
+        <div class="formatedHeadline"><span>Junior Front-End Developer</span></div>
+        <div class="formatedPersonalDescription"><span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad iusto, aperiam suscipit voluptate vero libero sit molestiae natus eveniet, amet aliquid consectetur fuga at itaque quod quos nobis architecto optio?</span></div>
+        <div class="blueBar">
+          <div class="formatedEmail"><span>emailteste@gmail.com</span></div>
+          <div class="formatedPhoneNumber"><span>(22)981149086</span></div>
+          <div class="formatedLocation"><span>Rio de Janeiro, Brasil</span></div>
+          <div class="formatedLinkedinProfile"><span>linkedin.com/in/pedrohefagundes</span></div>  
+        </div>
+        
+        <div class="gridArea">
+          <h2>SKILLS</h2>
+          <div class="formatedSkillArea">
+            <div class="formatedSkill"><span>SE0</span></div>
+            <div class="formatedSkill"><span>Communication</span></div>
+            <div class="formatedSkill"><span>Decision Making</span></div>
+            <div class="formatedSkill"><span>Emotional Intelligence</span></div>
+            <div class="formatedSkill"><span>Public Speaking</span></div>
+            <div class="formatedSkill"><span>Negotiation</span></div>
+            <div class="formatedSkill"><span>Teamwork</span></div>
+            <div class="formatedSkill"><span>Research & Strategy</span></div>
+            <div class="formatedSkill"><span>Outbound Marketing</span></div>
+            <div class="formatedSkill"><span>Email Marketing</span></div>
+            <div class="formatedSkill"><span>Google Analytics</span></div>
+            <div class="formatedSkill"><span>Sales & Marketing</span></div>
           </div>
         </div>
+        
+        <div class="workExperienceArea">
+          <h2>WORK EXPERIENCE</h2>
+          <h3 class="formatedTitle"><span>Developer Assistant</span></h3>
+          <div class="formatedCompany"><span>Pluma Tech Inc</span></div>
+          <div class="formatedWorkExpPeriod"><span>09/2018 - Present</span></div>
+          <div class="formatedCompanyLocation"><span>Rio de Janeiro - Brasil</span></div>
+          <div class="formatedAward"><span></span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt provident em eos vel asperiores culpa mollitia ex delectus nulla cupiditate, architecto quos.</div>  
+        </div> 
+
+        <div class="formatedEducationTitle"><span>Graphic Designer</span></div>
+        <div class="formatedEducationInstitution"><span>Miskatonic University</span></div>
+        <div class="formatedEducationPeriod"><span>08/2010 - 09/2013</span></div>
+
+        <div class="formatedLanguage"><span>English</span><span>Conversational</span></div>
       </div>
     </div>
   </section>
@@ -509,6 +534,7 @@
   <script src="js/shareScreen.js"></script>
   <script src="js/formatedCurriculum.js"></script>
   <script src="js/review.js"></script>
+  <script src="js/general.js"></script>
   <script src="js/congrat.js"></script>
 </body>
 

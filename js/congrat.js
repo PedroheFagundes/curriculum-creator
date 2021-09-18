@@ -1,11 +1,7 @@
 // Functions
 
 function showCongrat() {
-  hideHomeScreen();
-  hideSections();
-  hideReview();
-  hideCurriculum();
-  hideShare();
+  hideAllScreens();
   document.querySelector('#congratScreen').setAttribute("class", "showOn");
 }
 

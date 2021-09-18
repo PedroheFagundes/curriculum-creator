@@ -1,19 +1,11 @@
-// Initial Data
-
-let inputCounter = 0;
-
 // Functions
 
-function showHomeScreen () {
+function showHomeScreen() {
+  hideAllScreens();
   document.querySelector('#homeScreen').setAttribute("class", "showOn");
-  hideSections();
-  hideReview();
-  hideCurriculum();
-  hideCongrat();
-  hideShare()
 }
 
-function hideHomeScreen () {
+function hideHomeScreen() {
   document.querySelector('#homeScreen').setAttribute("class", "showOff");
 }
 
