@@ -58,19 +58,21 @@ function selectInput() {
       document.querySelector('#personalInfo-linkedin').setAttribute("class", "showOn");
       document.querySelector('#sectionName').innerHTML = "PERSONAL INFO";
       document.querySelector('#nextButton').innerHTML = "Next Section";
-
+      document.querySelector('#addButton').innerHTML = "";
       break;
 
     case 7:
       document.querySelector('#skillSection').setAttribute("class", "showOn");
       document.querySelector('#sectionName').innerHTML = "SKILLS";
       document.querySelector('#nextButton').innerHTML = "Next Section";
+      document.querySelector('#addButton').innerHTML = "+ Add SKILL";
       break;
 
     case 8:
       document.querySelector('#workExperience-title').setAttribute("class", "showOn");
       document.querySelector('#sectionName').innerHTML = "WORK EXPERIENCE";
       document.querySelector('#nextButton').innerHTML = "Next";
+      document.querySelector('#addButton').innerHTML = "";
       break;
 
     case 9:
@@ -88,18 +90,23 @@ function selectInput() {
     case 12:
       document.querySelector('#workExperience-location').setAttribute("class", "showOn");
       document.querySelector('#nextButton').innerHTML = "Next";
+      document.querySelector('#addButton').innerHTML = "";
+
       break;
 
     case 13:
       document.querySelector('#workExperience-award').setAttribute("class", "showOn");
       document.querySelector('#sectionName').innerHTML = "WORK EXPERIENCE";
       document.querySelector('#nextButton').innerHTML = "Next Section";
+      document.querySelector('#addButton').innerHTML = "+ Add WORK EXPERIENCE";
       break;
 
     case 14:
       document.querySelector('#education-title').setAttribute("class", "showOn");
       document.querySelector('#sectionName').innerHTML = "EDUCATION";
       document.querySelector('#nextButton').innerHTML = "Next";
+      document.querySelector('#addButton').innerHTML = "";
+
       break;
 
     case 15:
