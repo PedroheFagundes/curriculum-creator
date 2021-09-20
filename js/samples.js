@@ -66,9 +66,9 @@ document.querySelector('.container').innerHTML = `
 <h2>LANGUAGES</h2>
 <div class="gridArea">
   <div class="formatedGridArea">
-    <div class="formatedLanguage"><span>English</span><span>Conversational</span></div>
-    <div class="formatedLanguage"><span>French</span><span>Native/Bilingual</span></div>
-    <div class="formatedLanguage"><span>Spanish</span><span>Conversational</span></div>    
+    <div class="formatedCurriculumLanguage"><span>English</span><span>Conversational</span></div>
+    <div class="formatedCurriculumLanguage"><span>French</span><span>Native/Bilingual</span></div>
+    <div class="formatedCurriculumLanguage"><span>Spanish</span><span>Conversational</span></div>    
   </div>
 </div>
 `;

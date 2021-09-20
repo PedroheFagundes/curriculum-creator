@@ -100,6 +100,6 @@ function setUserInfo() {
   document.querySelectorAll('.formatedEducationInstitution span').forEach((item) => item.innerHTML = formatedEducationInstitution);
   document.querySelectorAll('.formatedEducationPeriod span').forEach((item) => item.innerHTML = formatedEducationPeriod);
   
-  document.querySelectorAll('.formatedLanguage span:first-child').forEach((item) => item.innerHTML = formatedLanguageName);
-  document.querySelectorAll('.formatedLanguage span:last-child').forEach((item) => item.innerHTML = formatedLanguageProeficiency);
+  document.querySelectorAll('.formatedCurriculumLanguage span:first-child').forEach((item) => item.innerHTML = formatedLanguageName);
+  document.querySelectorAll('.formatedCurriculumLanguage span:last-child').forEach((item) => item.innerHTML = formatedLanguageProeficiency);
 };

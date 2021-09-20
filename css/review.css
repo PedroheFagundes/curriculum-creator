@@ -41,6 +41,8 @@
   text-align: right;
   display: flex;
   justify-content: space-between;
+  max-height: 53px;
+  overflow: overlay;
 }
 
 .award {
