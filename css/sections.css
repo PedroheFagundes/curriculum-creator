@@ -49,6 +49,13 @@ main {
   color: var(--primary);
 }
 
+#addButton {
+  display: flex;
+  width: var(--sections-width);
+  justify-content: end;
+  padding-top: 5px;
+}
+
 /* Classes */
 
 .bar {
@@ -138,3 +145,4 @@ main {
   align-items: center;
   font-size: 20px;
 }
+
