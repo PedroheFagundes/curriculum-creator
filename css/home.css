@@ -79,8 +79,9 @@ header a {
   color: var(--primary);
 }
 
-.homeTextLeft {
+.homeText p.homeTextLeft {
   text-align: left;
+  font-size: 25px;
 }
 
 .homeTextRight {
